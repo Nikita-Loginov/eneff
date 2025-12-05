@@ -1,0 +1,70 @@
+.h1,
+h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--weight-font-2xl);
+  line-height: var(--line-height-tighter);
+}
+
+.h2,
+h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--weight-font-2xl);
+  line-height: var(--line-height-tighter);
+}
+
+h3,
+.h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--weight-font-2xl);
+  line-height: var(--line-height-tighter);
+}
+
+h4,
+.h4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--weight-font-lg);
+  line-height: var(--line-height-tight);
+}
+
+h5,
+.h5 {
+  font-size: var(--font-size-md);
+  font-weight: var(--weight-font-2xl);
+  line-height: var(--line-height-tighter);
+}
+
+h6,
+.h6 {
+  font-size: var(--font-size-base);
+  font-weight: var(--weight-font-xl);
+  line-height: var(--line-height-relaxed);
+}
+
+.p1 {
+  font-size: var(--font-size-sm);
+}
+
+.p2 {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-tighter);
+}
+
+.text-green {
+  color: var(--primary-color-100);
+}
+
+.text-center {
+  text-align: center;
+
+  &--media {
+    text-align: left;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}
+
+.montserrat-font {
+  font-family: var(--font-secondary);
+}

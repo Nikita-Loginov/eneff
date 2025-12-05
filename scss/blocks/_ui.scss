@@ -1,0 +1,14 @@
+.ui {
+  &__inner {
+    background-color: var(--secondary-color-900);
+    padding: 20px;
+    border-radius: var(--radius-md);
+  }
+
+  &__list,
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
