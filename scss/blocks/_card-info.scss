@@ -1,0 +1,51 @@
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  min-height: 136px;
+  background-color: var(--secondary-color-900);
+  justify-content: space-between;
+  transition: all 0.5s;
+
+  &__header,
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &--big {
+    min-height: 150px;
+  }
+
+  &--dark {
+    background-color: var(--secondary-color-100);
+  }
+
+  &--green {
+    background-color: var(--primary-color-100);
+  }
+
+  &--dark,
+  &--green {
+    .card-info {
+      &__header {
+        color: var(--secondary-color-900);
+      }
+    }
+  }
+
+  &.isHover {
+    &:hover {
+      background-color: var(--primary-color-100);
+    }
+  }
+
+  &__header {
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

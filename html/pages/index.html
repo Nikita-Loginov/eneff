@@ -1,21 +1,1072 @@
 <!DOCTYPE html>
 <html lang="en">
   @@include('../modules/head.html', { "title" : "Главная", "links" :
-  ["./css/main.css"] })
+  ["./css/main.css", "./css/lib/swiper.min.css"] })
   <body>
     <div class="wrapper">
       @@include('../modules/header.html')
 
-      <main class="main">
-        <section class="top">
+      <main class="main main--top">
+        <section class="top swiper-block middle-margin-bottom">
           <div class="container">
-            <div class="top__inner"></div>
+            <div class="top__inner">
+              <header class="top__header">
+                <h1 class="h1 montserrat-font">
+                  <span class="text-green">Инновационные</span> технические
+                  решения в энергосбережении
+                </h1>
+              </header>
+
+              <div class="top__content">
+                <div class="top__info">
+                  <div class="top__swiper-box">
+                    <div class="swiper swiper--top">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="top__item">
+                            <div class="top__item-img">
+                              <picture>
+                                <source
+                                  srcset="
+                                    /img/top/one.webp   1x,
+                                    /img/top/one2x.webp 2x
+                                  "
+                                />
+                                <img
+                                  src="/img/top/one.webp"
+                                  alt="фотография"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="top__item">
+                            <div class="top__item-img">
+                              <picture>
+                                <source
+                                  srcset="
+                                    /img/top/one.webp   1x,
+                                    /img/top/one2x.webp 2x
+                                  "
+                                />
+                                <img
+                                  src="/img/top/one.webp"
+                                  alt="фотография"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="top__info-content">
+                    <div class="top__cards">
+                      <div class="card-info">
+                        <header class="card-info__header">
+                          <span class="icon">
+                            <svg>
+                              <use xlink:href="#energy-icon"></use>
+                            </svg>
+                          </span>
+                        </header>
+
+                        <div class="card-info__content">
+                          <p class="p2 medium-font lh120">
+                            25 лет опыта в сфере <br />
+                            энергосбережения
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="card-info">
+                        <header class="card-info__header">
+                          <span class="icon text-green">
+                            <svg>
+                              <use xlink:href="#person-setting-icon"></use>
+                            </svg>
+                          </span>
+                        </header>
+
+                        <div class="card-info__content">
+                          <p class="p2 medium-font lh120">
+                            Оперативная техническая <br />
+                            поддержка
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="arrows-swiper">
+                      <button
+                        class="button button--cub button--white arrows-swiper__arrow prev"
+                        style="rotate: -180deg"
+                      >
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-without-icon"></use>
+                          </svg>
+                        </span>
+                      </button>
+
+                      <button
+                        class="button button--cub button--white arrows-swiper__arrow next"
+                      >
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-without-icon"></use>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="top__details">
+                  <a
+                    href="#"
+                    aria-label="Перейти в Каталог продукции"
+                    title="Каталог продукции"
+                    class="card-info isHover card-info--dark card-info--big"
+                  >
+                    <header class="card-info__header">
+                      <p class="h5-add bold-font">Каталог продукции</p>
+                    </header>
+
+                    <div class="card-info__content">
+                      <span class="button button--cub button--white">
+                        <span class="icon" style="color: #00000080">
+                          <svg>
+                            <use xlink:href="#arrow-without-icon"></use>
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+
+                  <a
+                    href="#"
+                    aria-label="Перейти в Тенические решения"
+                    title="Тенические решения"
+                    class="card-info isHover card-info--dark card-info--big"
+                  >
+                    <header class="card-info__header">
+                      <p class="h5-add bold-font">Тенические решения</p>
+                    </header>
+
+                    <div class="card-info__content">
+                      <span class="button button--cub button--white">
+                        <span class="icon" style="color: #00000080">
+                          <svg>
+                            <use xlink:href="#arrow-without-icon"></use>
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+
+                  <a
+                    href="#"
+                    aria-label="Перейти в Тенические решения"
+                    title="Тенические решения"
+                    class="card-info isHover card-info--green card-info--big"
+                  >
+                    <header class="card-info__header">
+                      <p class="h5-add bold-font">Оставить заявку</p>
+                    </header>
+
+                    <div class="card-info__content">
+                      <span class="button button--cub button--white">
+                        <span class="icon" style="color: #00000080">
+                          <svg>
+                            <use xlink:href="#arrow-without-icon"></use>
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="advantages middle-padding-section">
+          <div class="container">
+            <div class="advantages__inner">
+              <div class="advantages__items">
+                <div class="advantages-card">
+                  <header class="advantages-card__header">
+                    <p class="h4 montserrat-font">
+                      Системы на основе вспененного каучука
+                    </p>
+
+                    <p class="p2 uppercase-text">СэТ ПРОМТЕХИЗОЛ СТ/ВТ</p>
+                  </header>
+
+                  <div class="advantages-card__img">
+                    <picture>
+                      <source
+                        srcset="
+                          /img/advantages/one.png   1x,
+                          /img/advantages/one2x.png 2x
+                        "
+                      />
+                      <img src="/img/advantages/one.png" alt="фотография" />
+                    </picture>
+                  </div>
+
+                  <footer class="advantages-card__footer">
+                    <a
+                      href="#"
+                      aria-label="Перейти на страницу Системы на основе вспененного каучука"
+                      title="Системы на основе вспененного каучука"
+                      class="button button--cub button--white"
+                      ><span class="icon">
+                        <svg>
+                          <use xlink:href="#arrow-without-icon"></use>
+                        </svg> </span
+                    ></a>
+                  </footer>
+                </div>
+
+                <div class="advantages-card">
+                  <header class="advantages-card__header">
+                    <p class="h4 montserrat-font">
+                      Системы на основе минеральной ваты
+                    </p>
+
+                    <p class="p2 uppercase-text">СЭТ ПРОМТЕХИЗОЛ МВ</p>
+                  </header>
+
+                  <div class="advantages-card__img">
+                    <picture>
+                      <source
+                        srcset="
+                          /img/advantages/one.png   1x,
+                          /img/advantages/one2x.png 2x
+                        "
+                      />
+                      <img src="/img/advantages/one.png" alt="фотография" />
+                    </picture>
+                  </div>
+
+                  <footer class="advantages-card__footer">
+                    <a
+                      href="#"
+                      aria-label="Перейти на страницу Системы на основе вспененного каучука"
+                      title="Системы на основе вспененного каучука"
+                      class="button button--cub button--white"
+                      ><span class="icon">
+                        <svg>
+                          <use xlink:href="#arrow-without-icon"></use>
+                        </svg> </span
+                    ></a>
+                  </footer>
+                </div>
+
+                <div class="advantages-card advantages-card--big">
+                  <header class="advantages-card__header">
+                    <p class="h4 montserrat-font">Многоразовые изделия</p>
+
+                    <p class="p2 uppercase-text">СЭТ ПРОМТЕХИЗОЛ ТЧ</p>
+                  </header>
+
+                  <div class="advantages-card__img">
+                    <picture>
+                      <source
+                        srcset="
+                          /img/advantages/two.png  1x,
+                          /img/advantages/two2.png 2x
+                        "
+                      />
+                      <img src="/img/advantages/two.png" alt="фотография" />
+                    </picture>
+                  </div>
+
+                  <footer class="advantages-card__footer">
+                    <a
+                      href="#"
+                      aria-label="Перейти на страницу Системы на основе вспененного каучука"
+                      title="Системы на основе вспененного каучука"
+                      class="button button--cub button--white"
+                      ><span class="icon">
+                        <svg>
+                          <use xlink:href="#arrow-without-icon"></use>
+                        </svg> </span
+                    ></a>
+                  </footer>
+                </div>
+
+                <div class="advantages-card advantages-card--big">
+                  <header class="advantages-card__header">
+                    <p class="h4 montserrat-font">Защитные оболочки</p>
+
+                    <p class="p2 uppercase-text">ПРОМТЕХИЗОЛ Д</p>
+                  </header>
+
+                  <div class="advantages-card__img">
+                    <picture>
+                      <source
+                        srcset="
+                          /img/advantages/two.png  1x,
+                          /img/advantages/two2.png 2x
+                        "
+                      />
+                      <img src="/img/advantages/two.png" alt="фотография" />
+                    </picture>
+                  </div>
+
+                  <footer class="advantages-card__footer">
+                    <a
+                      href="#"
+                      aria-label="Перейти на страницу Системы на основе вспененного каучука"
+                      title="Системы на основе вспененного каучука"
+                      class="button button--cub button--white"
+                      ><span class="icon">
+                        <svg>
+                          <use xlink:href="#arrow-without-icon"></use>
+                        </svg> </span
+                    ></a>
+                  </footer>
+                </div>
+
+                <div class="advantages-card advantages-card--big">
+                  <div class="advantages-card__header">
+                    <p class="h4 montserrat-font">Аксессуары</p>
+                  </div>
+
+                  <div class="advantages-card__content">
+                    <ul class="list-info">
+                      <li class="list-info__link">
+                        <a
+                          href="#"
+                          aria-label="Перейти на страницу Клей"
+                          title="Клей"
+                          class="list-info__item"
+                        >
+                          <p class="h6 medium-font">Клей</p>
+
+                          <span class="icon">
+                            <svg>
+                              <use xlink:href="#arrow-without-icon"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+
+                      <li class="list-info__link">
+                        <a
+                          href="#"
+                          aria-label="Перейти на страницу Растворитель"
+                          title="Растворитель"
+                          class="list-info__item"
+                        >
+                          <p class="h6 medium-font">Растворитель</p>
+
+                          <span class="icon">
+                            <svg>
+                              <use xlink:href="#arrow-without-icon"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+
+                      <li class="list-info__link">
+                        <a
+                          href="#"
+                          aria-label="Перейти на страницу Ленты"
+                          title="Ленты"
+                          class="list-info__item"
+                        >
+                          <p class="h6 medium-font">Ленты</p>
+
+                          <span class="icon">
+                            <svg>
+                              <use xlink:href="#arrow-without-icon"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+
+                      <li class="list-info__link">
+                        <a
+                          href="#"
+                          aria-label="Перейти на страницу Ножи"
+                          title="Ножи"
+                          class="list-info__item"
+                        >
+                          <p class="h6 medium-font">Ножи</p>
+
+                          <span class="icon">
+                            <svg>
+                              <use xlink:href="#arrow-without-icon"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+
+                      <li class="list-info__link">
+                        <a
+                          href="#"
+                          aria-label="Перейти на страницу Заклепки пластиковые"
+                          title="Заклепки пластиковые"
+                          class="list-info__item"
+                        >
+                          <p class="h6 medium-font">Заклепки пластиковые</p>
+
+                          <span class="icon">
+                            <svg>
+                              <use xlink:href="#arrow-without-icon"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+
+                      <li class="list-info__link">
+                        <a
+                          href="#"
+                          aria-label="Перейти на страницу все аксесеуары"
+                          title="Смотреть всё"
+                          class="list-info__item green"
+                        >
+                          <p class="h6 medium-font">Смотреть всё</p>
+
+                          <span class="icon">
+                            <svg>
+                              <use xlink:href="#arrow-without-icon"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="whyWe">
+          <div class="container">
+            <div class="whyWe__inner">
+              <div class="whyWe__items">
+                <div class="whyWe-item">
+                  <header class="whyWe-item__header">
+                    <p class="text-green h6 regular-font">/ Наши ценности</p>
+
+                    <p class="h2 montserrat-font">Почему мы</p>
+                  </header>
+                </div>
+
+                <div class="card-decor bg-green">
+                  <header class="card-decor__header">
+                    <div class="card-decor__icon-box">
+                      <div class="card-decor__icon-block">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#energy-icon"></use>
+                          </svg>
+                        </span>
+
+                        <div class="card-decor__icon card-decor__icon--bg">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div
+                        class="card-decor__icon-block"
+                        style="transform: translateX(-13px)"
+                      >
+                        <div class="card-decor__icon">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+
+                  <div class="card-decor__content">
+                    <p class="h5-add semibold-font montserrat-font">
+                      Экспертиза и опыт
+                    </p>
+
+                    <div class="textbox">
+                      <p>
+                        Компания обладает глубокими знаниями и опытом в области
+                        энергосбережения, что позволяет ей предлагать
+                        эффективные и проверенные решения.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-decor bg-green">
+                  <header class="card-decor__header">
+                    <div class="card-decor__icon-box">
+                      <div class="card-decor__icon-block">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#person-setting-icon"></use>
+                          </svg>
+                        </span>
+
+                        <div class="card-decor__icon card-decor__icon--bg">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div
+                        class="card-decor__icon-block"
+                        style="transform: translateX(-13px)"
+                      >
+                        <div class="card-decor__icon">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+
+                  <div class="card-decor__content">
+                    <p class="h5-add semibold-font montserrat-font">
+                      Индивидуальный подход
+                    </p>
+
+                    <div class="textbox">
+                      <p>
+                        Каждое предприятие уникально, поэтому компания
+                        предлагает индивидуальные решения, учитывающие
+                        специфические потребности и условия.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-decor bg-green">
+                  <header class="card-decor__header">
+                    <div class="card-decor__icon-box">
+                      <div class="card-decor__icon-block">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#bulb-icon"></use>
+                          </svg>
+                        </span>
+
+                        <div class="card-decor__icon card-decor__icon--bg">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div
+                        class="card-decor__icon-block"
+                        style="transform: translateX(-13px)"
+                      >
+                        <div class="card-decor__icon">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+
+                  <div class="card-decor__content">
+                    <p class="h5-add semibold-font montserrat-font">
+                      Инновации и технологии
+                    </p>
+
+                    <div class="textbox">
+                      <p>
+                        Компания следит за новейшими технологиями и инновациями
+                        в области энергосбережения, что позволяет предлагать
+                        передовые решения.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-decor bg-green">
+                  <header class="card-decor__header">
+                    <div class="card-decor__icon-box">
+                      <div class="card-decor__icon-block">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#piggy-icon"></use>
+                          </svg>
+                        </span>
+
+                        <div class="card-decor__icon card-decor__icon--bg">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div
+                        class="card-decor__icon-block"
+                        style="transform: translateX(-13px)"
+                      >
+                        <div class="card-decor__icon">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+
+                  <div class="card-decor__content">
+                    <p class="h5-add semibold-font montserrat-font">
+                      Экономическая эффективность
+                    </p>
+
+                    <div class="textbox">
+                      <p>
+                        Внедрение решений компании помогает предприятиям
+                        промышленности, энергетики и ЖКХ значительно снизить
+                        эксплуатационные расходы и повысить рентабельность.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-decor bg-green">
+                  <header class="card-decor__header">
+                    <div class="card-decor__icon-box">
+                      <div class="card-decor__icon-block">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#graduation-cap-icon"></use>
+                          </svg>
+                        </span>
+
+                        <div class="card-decor__icon card-decor__icon--bg">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div
+                        class="card-decor__icon-block"
+                        style="transform: translateX(-13px)"
+                      >
+                        <div class="card-decor__icon">
+                          <svg>
+                            <use xlink:href="#hexagon-icon"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+
+                  <div class="card-decor__content">
+                    <p class="h5-add semibold-font montserrat-font">
+                      Поддержка и обучение
+                    </p>
+
+                    <div class="textbox">
+                      <p>
+                        Компания предоставляет техническую поддержку и обучение
+                        персонала предприятия для эффективного использования
+                        новых технологий.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__info">
+                <header class="about__header">
+                  <p class="h6 regular-font text-green">/ О компании</p>
+
+                  <p class="h2 montserrat-font">
+                    Помощь в сокращении энергопотребления
+                  </p>
+                </header>
+
+                <div class="about__content">
+                  <div class="text-decor">
+                    <div class="textbox">
+                      <p class="montserrat-font semibold-font">
+                        ENEFF — компания, занимающаяся разработкой технических
+                        решений в сфере энергосбережения для предприятий
+                        промышленности, энергетики и ЖКХ
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="list-main">
+                    <div class="list-main__item">
+                      <p class="bold-font">Мы предлагаем:</p>
+
+                      <ul class="list-main__box">
+                        <li class="list-main__link">
+                          Инновационные технологии и оборудование
+                        </li>
+
+                        <li class="list-main__link">
+                          Комплексные проекты по модернизации систем
+                          энергоснабжения
+                        </li>
+
+                        <li class="list-main__link">
+                          Консультации и помощь в выборе оптимальных решений —
+                          от разработки концепции до внедрения и эксплуатации.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="about__video-box"
+                data-block="video-box"
+                data-video-container
+              >
+                <video
+                  src="/videos/one.mp4"
+                  poster
+                  loop
+                  muted
+                  preload="metadata"
+                  playsinline
+                ></video>
+
+                <div class="about__video-actions">
+                  <span
+                    class="button button--cub button--big-cub button--white"
+                  >
+                    <span class="icon pause">
+                      <svg>
+                        <use xlink:href="#play-icon"></use>
+                      </svg>
+                    </span>
+
+                    <span class="icon play">
+                      <svg>
+                        <use xlink:href="#pause-icon"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news swiper-block">
+          <div class="container">
+            <div class="topBox">
+              <header class="topBox__header">
+                <div class="topBox__header-top">
+                  <p class="h6 text-green regular-font">/ Блог</p>
+
+                  <h2 class="h2 montserrat-font">Новости компании</h2>
+                </div>
+
+                <div class="arrows-swiper">
+                  <button
+                    class="button button--cub button--white arrows-swiper__arrow prev"
+                    style="rotate: -180deg"
+                  >
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="#arrow-without-icon"></use>
+                      </svg>
+                    </span>
+                  </button>
+
+                  <button
+                    class="button button--cub button--white arrows-swiper__arrow next"
+                  >
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="#arrow-without-icon"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </header>
+
+              <div class="news__content">
+                <div class="news__swiper-box">
+                  <div class="swiper swiper--news">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="news-item">
+                          <header class="news-item__top">
+                            <div class="news-item__header">
+                              <time
+                                datetime="2023-11-27"
+                                title="27 ноября 2023 года"
+                                style="color: var(--secondary-color-500)"
+                                >2023.11.27</time
+                              >
+
+                              <p class="h6">
+                                Дарим скидку — 15% на все услуги компании
+                              </p>
+                            </div>
+
+                            <div class="news-item__content">
+                              <p class="news-item__collapse">
+                                Приближается декабрь, а вместе с ним и самый
+                                долгожданный праздник — Новый год. Традиционно
+                                в знак благодарности нашим клиентам мы дарим —
+                                15% скидку на все услуги компании Масте
+                              </p>
+                            </div>
+                          </header>
+
+                          <footer class="news-item__footer">
+                            <a
+                              href="#"
+                              aria-lavel="Перейти на страницу новости"
+                              title="Читать далее"
+                              class="link-decor"
+                            >
+                              <span class="text-green medium-font"
+                                >Читать далее</span
+                              >
+
+                              <span class="icon text-green">
+                                <svg>
+                                  <use xlink:href="#arrow-right-icon"></use>
+                                </svg>
+                              </span>
+                            </a>
+                          </footer>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="news-item">
+                          <header class="news-item__top">
+                            <div class="news-item__header">
+                              <time
+                                datetime="2023-11-27"
+                                title="27 ноября 2023 года"
+                                style="color: var(--secondary-color-500)"
+                                >2023.11.27</time
+                              >
+
+                              <p class="h6 news-item__collapse">
+                                Дарим скидку — 15% на все услуги компании
+                                Дарим скидку — 15% на все услуги компании
+                              </p>
+                            </div>
+
+                            <div class="news-item__content">
+                              <p class="news-item__collapse">
+                                Приближается декабрь, а вместе с ним и самый
+                                долгожданный праздник — Новый год. Традиционно
+                                в знак благодарности нашим клиентам мы дарим —
+                                15% скидку на все услуги компании Масте
+                              </p>
+                            </div>
+                          </header>
+
+                          <footer class="news-item__footer">
+                            <a
+                              href="#"
+                              aria-lavel="Перейти на страницу новости"
+                              title="Читать далее"
+                              class="link-decor"
+                            >
+                              <span class="text-green medium-font"
+                                >Читать далее</span
+                              >
+
+                              <span class="icon text-green">
+                                <svg>
+                                  <use xlink:href="#arrow-right-icon"></use>
+                                </svg>
+                              </span>
+                            </a>
+                          </footer>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="news-item">
+                          <header class="news-item__top">
+                            <div class="news-item__header">
+                              <time
+                                datetime="2023-11-27"
+                                title="27 ноября 2023 года"
+                                style="color: var(--secondary-color-500)"
+                                >2023.11.27</time
+                              >
+
+                              <p class="h6 news-item__collapse">
+                                Дарим скидку — 15% на все услуги компании
+                                Дарим скидку — 15% на все услуги компании
+                              </p>
+                            </div>
+
+                            <div class="news-item__content">
+                              <p class="news-item__collapse">
+                                Приближается декабрь, а вместе с ним и самый
+                                долгожданный праздник — Новый год. Традиционно
+                                в знак благодарности нашим клиентам мы дарим —
+                                15% скидку на все услуги компании Масте
+                              </p>
+                            </div>
+                          </header>
+
+                          <footer class="news-item__footer">
+                            <a
+                              href="#"
+                              aria-lavel="Перейти на страницу новости"
+                              title="Читать далее"
+                              class="link-decor"
+                            >
+                              <span class="text-green medium-font"
+                                >Читать далее</span
+                              >
+
+                              <span class="icon text-green">
+                                <svg>
+                                  <use xlink:href="#arrow-right-icon"></use>
+                                </svg>
+                              </span>
+                            </a>
+                          </footer>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="news-item">
+                          <header class="news-item__top">
+                            <div class="news-item__header">
+                              <time
+                                datetime="2023-11-27"
+                                title="27 ноября 2023 года"
+                                style="color: var(--secondary-color-500)"
+                                >2023.11.27</time
+                              >
+
+                              <p class="h6 news-item__collapse">
+                                Дарим скидку — 15% на все услуги компании
+                                Дарим скидку — 15% на все услуги компании
+                              </p>
+                            </div>
+
+                            <div class="news-item__content">
+                              <p class="news-item__collapse">
+                                Приближается декабрь, а вместе с ним и самый
+                                долгожданный праздник — Новый год. Традиционно
+                                в знак благодарности нашим клиентам мы дарим —
+                                15% скидку на все услуги компании Масте
+                              </p>
+                            </div>
+                          </header>
+
+                          <footer class="news-item__footer">
+                            <a
+                              href="#"
+                              aria-lavel="Перейти на страницу новости"
+                              title="Читать далее"
+                              class="link-decor"
+                            >
+                              <span class="text-green medium-font"
+                                >Читать далее</span
+                              >
+
+                              <span class="icon text-green">
+                                <svg>
+                                  <use xlink:href="#arrow-right-icon"></use>
+                                </svg>
+                              </span>
+                            </a>
+                          </footer>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="news-item">
+                          <header class="news-item__top">
+                            <div class="news-item__header">
+                              <time
+                                datetime="2023-11-27"
+                                title="27 ноября 2023 года"
+                                style="color: var(--secondary-color-500)"
+                                >2023.11.27</time
+                              >
+
+                              <p class="h6 news-item__collapse">
+                                Дарим скидку — 15% на все услуги компании
+                                Дарим скидку — 15% на все услуги компании
+                              </p>
+                            </div>
+
+                            <div class="news-item__content">
+                              <p class="news-item__collapse">
+                                Приближается декабрь, а вместе с ним и самый
+                                долгожданный праздник — Новый год. Традиционно
+                                в знак благодарности нашим клиентам мы дарим —
+                                15% скидку на все услуги компании Масте
+                              </p>
+                            </div>
+                          </header>
+
+                          <footer class="news-item__footer">
+                            <a
+                              href="#"
+                              aria-lavel="Перейти на страницу новости"
+                              title="Читать далее"
+                              class="link-decor"
+                            >
+                              <span class="text-green medium-font"
+                                >Читать далее</span
+                              >
+
+                              <span class="icon text-green">
+                                <svg>
+                                  <use xlink:href="#arrow-right-icon"></use>
+                                </svg>
+                              </span>
+                            </a>
+                          </footer>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
 
       @@include('../modules/footer.html')
     </div>
-   
+
+    <script src="/js/lib/swiper.min.js"></script>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+.swiper-block {
+  .arrows-swiper {
+    &:has(.arrows-swiper__arrow.prev.swiper-button-disabled):has(
+        .arrows-swiper__arrow.next.swiper-button-disabled
+      ) {
+      display: none;
+    }
+  }
+}

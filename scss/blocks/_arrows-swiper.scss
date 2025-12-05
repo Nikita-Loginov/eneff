@@ -1,0 +1,18 @@
+.arrows-swiper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__arrow {
+    &.button--white {
+      .icon {
+        color: #00000080;
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}
