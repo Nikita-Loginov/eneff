@@ -9,6 +9,7 @@ html {
   --secondary-color-400: #454f5b;
   --secondary-color-500: #474f5a80;
   --secondary-color-600: #81817f;
+  --secondary-color-650: #637381;
   --secondary-color-700: #cfd4dc;
   --secondary-color-800: #f2f2f2;
   --secondary-color-900: #ffffff;
@@ -424,6 +425,9 @@ body.open-modal {
   background-color: var(--primary-color-100);
   color: var(--secondary-color-900);
 }
+.text-decor--big {
+  padding: 40px;
+}
 
 .link-decor {
   display: -webkit-box;
@@ -526,6 +530,10 @@ body.open-modal {
   background-color: var(--secondary-color-800);
   color: var(--secondary-color-100);
 }
+.button--gray-accent {
+  background-color: var(--secondary-color-1100);
+  color: var(--primary-color-100);
+}
 .button--white {
   background-color: var(--secondary-color-900);
   color: var(--primary-color-100);
@@ -570,6 +578,14 @@ body.open-modal {
 .button--big-middle {
   width: 51px;
   height: 51px;
+}
+.button--big-x {
+  width: 56px;
+  height: 56px;
+}
+.button--big-x .icon {
+  width: 32px;
+  height: 32px;
 }
 .button--big-cub {
   width: 64px;
@@ -1172,6 +1188,49 @@ body.open-modal {
   margin-left: auto;
 }
 
+.certificates-item {
+  background-color: var(--secondary-color-900);
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+}
+.certificates-item__header, .certificates-item__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+.certificates-item__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 12px;
+}
+.certificates-item__footer {
+  margin-top: auto;
+}
+.certificates-item__btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1363,6 +1422,34 @@ body.open-modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.card-details {
+  background-color: var(--secondary-color-900);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.card-details__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.card-details__img {
+  width: 100%;
+  height: 458px;
+}
+.card-details__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {

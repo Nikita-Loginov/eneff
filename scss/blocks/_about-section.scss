@@ -1,0 +1,7 @@
+.about-section {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+}

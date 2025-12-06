@@ -27,6 +27,11 @@
     color: var(--secondary-color-100);
   }
 
+  &--gray-accent {
+    background-color: var(--secondary-color-1100);
+    color: var(--primary-color-100);
+  }
+
   &--white {
     background-color: var(--secondary-color-900);
     color: var(--primary-color-100);
@@ -79,6 +84,16 @@
   &--big-middle {
     width: 51px;
     height: 51px;
+  }
+
+  &--big-x {
+    width: 56px;
+    height: 56px;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   &--big-cub {
