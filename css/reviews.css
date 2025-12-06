@@ -1,8 +1,4 @@
-.catalogy__btns {
-  width: 100%;
-  min-width: 0;
-}
-.catalogy__content {
+.reviews-section__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,5 +6,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 26px;
+  gap: 30px;
 }

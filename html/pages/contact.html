@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../modules/head.html', { "title" : "Контакты", "links" :
+  ["./css/contact.css"] })
+  <body>
+    <div class="wrapper">
+      @@include('../modules/header.html')
+
+      <main class="main main--top">
+        <div class="top-page">
+          <div class="container">
+            <div class="top-page__inner">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__link">
+                  <a
+                    href="/"
+                    aria-label="Перейти на Главную"
+                    title="Главная"
+                    class="montserrat-font p2"
+                    >Главная</a
+                  >
+                </li>
+
+                <li class="breadcrumbs__link">
+                  <span class="montserrat-font p2">Контакты</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-sections">
+          <section class="contact">
+            <div class="container">
+              <div class="topBox topBox--small">
+                <div class="topBox__header">
+                  <h1 class="h1">Контакты</h1>
+                </div>
+
+                <div class="contact__inner">
+                  @@include('../modules/contact-form.html')
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      @@include('../modules/footer.html')
+    </div>
+  </body>
+</html>

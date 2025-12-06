@@ -825,7 +825,7 @@
                                 >2023.11.27</time
                               >
 
-                              <p class="h6">
+                              <p class="h6 news-item__collapse">
                                 Дарим скидку — 15% на все услуги компании
                               </p>
                             </div>
@@ -1154,6 +1154,7 @@
                           </div>
                         </div>
                       </div>
+                      
                       <div class="swiper-slide">
                         <div class="reviews-item">
                           <div class="reviews-item__img">
@@ -1180,7 +1181,27 @@
           </div>
         </section>
 
-        @@include('../modules/contact.html')
+        <section class="contact">
+          <div class="container">
+            <div class="topBox">
+              <header class="topBox__header">
+                <div class="topBox__header-top">
+                  <p class="h6 text-green regular-font">/ Конакты и реквизиты</p>
+        
+                  <h2 class="h2 montserrat-font">Связаться с нами</h2>
+                </div>
+              </header>
+
+              <div class="contact__inner">
+                @@include('../modules/contact-form.html')
+              </div>
+        
+             
+            </div>
+          </div>
+        </section>
+
+        
       </main>
 
       @@include('../modules/footer.html')
