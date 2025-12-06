@@ -102,6 +102,10 @@ h6,
   line-height: var(--line-height-relaxed);
 }
 
+.ls-2 {
+  letter-spacing: calc((1em * 0.02) * -1);
+}
+
 .uppercase-text {
   text-transform: uppercase;
 }

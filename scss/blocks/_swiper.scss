@@ -7,3 +7,15 @@
     }
   }
 }
+
+.swiper--tabs {
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .swiper-slide {
+    width: fit-content;
+  }
+}

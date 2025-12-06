@@ -94,3 +94,24 @@
     color: var(--secondary-color-600);
   }
 }
+
+.list-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    .p2 {
+      font-size: 15px;
+    }
+  }
+
+  &__key {
+    opacity: 0.6;
+  }
+}

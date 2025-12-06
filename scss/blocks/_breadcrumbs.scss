@@ -1,0 +1,23 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  &__link {
+    &:not(:last-child) {
+      padding-right: 14px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: var(--secondary-color-600);
+
+      &:before {
+        position: absolute;
+        content: "/";
+        right: 0;
+        color: currentColor;
+      }
+    }
+  }
+}

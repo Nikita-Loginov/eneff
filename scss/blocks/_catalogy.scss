@@ -1,0 +1,19 @@
+.catalogy {
+  &__btns {
+    width: 100%;
+    min-width: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}

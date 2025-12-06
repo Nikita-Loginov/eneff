@@ -1,0 +1,15 @@
+.tab-btn {
+  &.active {
+    background-color: var(--primary-color-100);
+    color: var(--secondary-color-900);
+  }
+}
+
+.tab-item {
+  display: none;
+  width: 100%;
+
+  &.active {
+    display: flex;
+  }
+}

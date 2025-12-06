@@ -55,6 +55,12 @@ body {
       padding: calc(var(--gap-blocks) / 2) 0;
     }
   }
+
+  &:has(.top-page) {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
 }
 
 .container {
@@ -86,6 +92,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  &--small {
+    gap: 32px;
+  }
 
   &__header {
     display: flex;
@@ -132,11 +142,25 @@ body {
 
   &:before {
     position: absolute;
-    content:"";
+    content: "";
     left: 0;
     width: 6px;
     height: 6px;
     background-color: currentColor;
     border-radius: 50%;
   }
+}
+
+.top-page {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.goods-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px 30px;
 }

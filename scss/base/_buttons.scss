@@ -9,6 +9,7 @@
   background-color: var(--primary-color-100);
   color: var(--secondary-color-900);
   transition: all 0.5s;
+  cursor: pointer;
 
   .icon {
     width: 20px;
@@ -29,6 +30,11 @@
   &--white {
     background-color: var(--secondary-color-900);
     color: var(--primary-color-100);
+  }
+
+  &--white-second {
+    background-color: var(--secondary-color-900);
+    color: var(--secondary-color-100);
   }
 
   &--dark {

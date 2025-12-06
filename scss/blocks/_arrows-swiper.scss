@@ -15,4 +15,28 @@
       pointer-events: none;
     }
   }
+
+  &--absolute {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    right: 12px;
+    justify-content: space-between;
+    z-index: 10;
+
+    .arrows-swiper {
+      &__arrow {
+        position: absolute;
+
+        &.prev {
+          left: 0;
+        }
+
+        &.next {
+          right: 0;
+        }
+      }
+    }
+  }
 }

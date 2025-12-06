@@ -1,0 +1,30 @@
+.good-big {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color-900);
+  padding: 32px;
+  gap: 20px;
+
+  & > *:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #0000001f;
+  }
+
+  &__header,
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+  }
+}
