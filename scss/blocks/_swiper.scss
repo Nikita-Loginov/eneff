@@ -19,3 +19,31 @@
     width: fit-content;
   }
 }
+
+.swiper-pagination-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .swiper-pagination {
+    &.swiper-pagination-fraction {
+      background-color: var(--secondary-color-100);
+      color: var(--secondary-color-900);
+      padding: 5px 8px;
+      font-size: 12px;
+      font-weight: var(--weight-font-lg);
+    }
+  }
+
+  &--absolute {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+
+  &:has(.swiper-pagination.swiper-pagination-lock) {
+    display: none;
+  }
+}

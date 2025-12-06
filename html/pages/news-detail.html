@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../modules/head.html', { "title" : "Деталка новости", "links" :
+  ["./css/news-detail.css", "./css/lib/swiper.min.css"] })
+  <body>
+    <div class="wrapper">
+      @@include('../modules/header.html')
+
+      <main class="main main--top">
+        <div class="top-page">
+          <div class="container">
+            <div class="top-page__inner">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__link">
+                  <a
+                    href="/"
+                    aria-label="Перейти на Главную"
+                    title="Главная"
+                    class="montserrat-font p2"
+                    >Главная</a
+                  >
+                </li>
+
+                <li class="breadcrumbs__link">
+                  <a
+                    href="/"
+                    aria-label="Перейти на Новости"
+                    title="Новости"
+                    class="montserrat-font p2"
+                    >Новости</a
+                  >
+                </li>
+
+                <li class="breadcrumbs__link">
+                  <span class="montserrat-font p2">Новость</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-sections">
+          <section class="news-detail">
+            <div class="container">
+              <div class="topBox topBox--small">
+                <div class="topBox__header topBox__header--column">
+                  <h1 class="h2">Виды минеральной ваты</h1>
+
+                  <time
+                    datetime="2023-11-27"
+                    title="27 ноября 2023 года"
+                    style="color: var(--secondary-color-500)"
+                    >2023.11.27</time
+                  >
+                </div>
+
+                <div class="news-detail__inner">
+                  <div class="news-detail__info">
+                    <div class="news-detail__item">
+                      <div class="news-detail__item-img">
+                        <picture>
+                          <source
+                            srcset="
+                              /img/goods/two.webp   1x,
+                              /img/goods/two2x.webp 2x
+                            "
+                          />
+                          <img src="/img/goods/two.webp" alt="фотография" />
+                        </picture>
+                      </div>
+
+                      <div class="news-detail__item-block">
+                        <h2 class="h3 montserrat-font">
+                          Что такое минеральная вата?
+                        </h2>
+
+                        <div class="textbox">
+                          <p>
+                            Минераловатные цилиндры плотностью 100 кг/м3 в
+                            оцинкованной окожушке. Изолируйте уличные трубы в 2
+                            раза быстрее. Для теплоизоляции трубопроводов
+                            диаметром до 169 мм цилиндр уже вставлен в
+                            оцинкованный кожух. Просто накиньте изоляцию на
+                            трубу и закрутите саморезы в готовые отверстия. Для
+                            трубопроводов большего диаметра цилиндры и кожухи
+                            поставляются в разобранном виде.
+                          </p>
+
+                          <p>
+                            Минераловатные цилиндры плотностью 100 кг/м3 в
+                            оцинкованной окожушке. Изолируйте уличные трубы в 2
+                            раза быстрее. Для теплоизоляции трубопроводов
+                            диаметром до 169 мм цилиндр уже вставлен в
+                            оцинкованный кожух. Просто накиньте изоляцию на
+                            трубу и закрутите саморезы в готовые отверстия. Для
+                            трубопроводов большего диаметра цилиндры и кожухи
+                            поставляются в разобранном виде.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="news-detail__item">
+                      <div class="support-block">
+                        <header class="support-block__header">
+                          <div class="button button--white button--cub">
+                            <span class="icon">
+                              <svg>
+                                <use xlink:href="#support-icon"></use>
+                              </svg>
+                            </span>
+                          </div>
+
+                          <p class="h6 bold-font">Важная информация короткая</p>
+                        </header>
+                      </div>
+                    </div>
+
+                    <div class="news-detail__item">
+                      <div class="news-detail__swiper-box swiper-block">
+                        <div class="swiper swiper--detail">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div
+                                class="news-detail__item-img news-detail__item-img--big"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /img/goods/two.webp   1x,
+                                      /img/goods/two2x.webp 2x
+                                    "
+                                  />
+                                  <img
+                                    src="/img/goods/two.webp"
+                                    alt="фотография"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div
+                                class="news-detail__item-img news-detail__item-img--big"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /img/goods/two.webp   1x,
+                                      /img/goods/two2x.webp 2x
+                                    "
+                                  />
+                                  <img
+                                    src="/img/goods/two.webp"
+                                    alt="фотография"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="arrows-swiper arrows-swiper--absolute">
+                            <button
+                              class="button button--cub button--white arrows-swiper__arrow prev"
+                              style="rotate: -180deg"
+                            >
+                              <span class="icon">
+                                <svg>
+                                  <use xlink:href="#arrow-without-icon"></use>
+                                </svg>
+                              </span>
+                            </button>
+
+                            <button
+                              class="button button--cub button--white arrows-swiper__arrow next"
+                            >
+                              <span class="icon">
+                                <svg>
+                                  <use xlink:href="#arrow-without-icon"></use>
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
+
+                          <div
+                            class="swiper-pagination-box swiper-pagination-box--absolute"
+                          >
+                            <div class="swiper-pagination"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="news-detail__item-block">
+                        <h3 class="h5 montserrat-font">
+                          Что такое минеральная вата?
+                        </h3>
+
+                        <div class="list-main">
+                          <div class="list-main__item">
+                            <ul class="list-main__box">
+                              <li class="list-main__link">
+                                Минераловатные цилиндры плотностью 100 кг/м3 в
+                                оцинкованной окожушке. Изолируйте уличные трубы
+                                в 2 раза быстрее. Для теплоизоляции
+                                трубопроводов диаметром до 169 мм цилиндр уже
+                                вставлен в оцинкованный кожух. Просто накиньте
+                                изоляцию на трубу и закрутите саморезы в готовые
+                                отверстия. Для трубопроводов большего диаметра
+                                цилиндры и кожухи поставляются в разобранном
+                                виде.
+                              </li>
+
+                              <li class="list-main__link">
+                                Минераловатные цилиндры плотностью 100 кг/м3 в
+                                оцинкованной окожушке. Изолируйте уличные трубы
+                                в 2 раза быстрее. Для теплоизоляции
+                                трубопроводов диаметром до 169 мм цилиндр уже
+                                вставлен в оцинкованный кожух. Просто накиньте
+                                изоляцию на трубу и закрутите саморезы в готовые
+                                отверстия. Для трубопроводов большего диаметра
+                                цилиндры и кожухи поставляются в разобранном
+                                виде.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="news-detail__item">
+                      <div class="support-block support-block--big">
+                        <header class="support-block__header">
+                          <div class="button button--white button--cub">
+                            <span class="icon">
+                              <svg>
+                                <use xlink:href="#support-icon"></use>
+                              </svg>
+                            </span>
+                          </div>
+                        </header>
+
+                        <div class="support-block__content">
+                          <h3 class="h5">Важная информация</h3>
+
+                          <div class="list-main">
+                            <div class="list-main__item">
+                              <ul class="list-main__box">
+                                <li class="list-main__link">
+                                  Минераловатные цилиндры плотностью 100 кг/м3 в
+                                  оцинкованной окожушке. Изолируйте уличные
+                                  трубы в 2 раза быстрее. Для теплоизоляции
+                                  трубопроводов диаметром до 169 мм цилиндр уже
+                                  вставлен в оцинкованный кожух. Просто накиньте
+                                  изоляцию на трубу и закрутите саморезы в
+                                  готовые отверстия. Для трубопроводов большего
+                                  диаметра цилиндры и кожухи поставляются в
+                                  разобранном виде.
+                                </li>
+
+                                <li class="list-main__link">
+                                  Минераловатные цилиндры плотностью 100 кг/м3 в
+                                  оцинкованной окожушке. Изолируйте уличные
+                                  трубы в 2 раза быстрее. Для теплоизоляции
+                                  трубопроводов диаметром до 169 мм цилиндр уже
+                                  вставлен в оцинкованный кожух. Просто накиньте
+                                  изоляцию на трубу и закрутите саморезы в
+                                  готовые отверстия. Для трубопроводов большего
+                                  диаметра цилиндры и кожухи поставляются в
+                                  разобранном виде.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-detail__banners">
+                    <div class="news-detail__banner">
+                      <p class="h6 bold-font">Содержание</p>
+
+                      <div class="list-main">
+                        <div class="list-main__item">
+                          <ul class="list-main__box list-main__box--border">
+                            <li class="list-main__link">
+                              <a
+                                href="#"
+                                aria-label="Перейти к блоку Что такое минеральная вата"
+                                title="Что такое минеральная вата"
+                                >Что такое минеральная вата</a
+                              >
+                            </li>
+
+                            <li class="list-main__link list-main__link--gray">
+                              <a
+                                href="#"
+                                aria-label="Перейти к блоку Что такое минеральная вата"
+                                title="Что такое минеральная вата"
+                                >Что такое минеральная вата</a
+                              >
+                            </li>
+
+                            <li class="list-main__link list-main__link--gray">
+                              <a
+                                href="#"
+                                aria-label="Перейти к блоку Что такое минеральная вата"
+                                title="Что такое минеральная вата"
+                                >Что такое минеральная вата</a
+                              >
+                            </li>
+
+                            <li class="list-main__link list-main__link--gray">
+                              <a
+                                href="#"
+                                aria-label="Перейти к блоку Что такое минеральная вата"
+                                title="Что такое минеральная вата"
+                                >Что такое минеральная вата</a
+                              >
+                            </li>
+
+                            <li class="list-main__link list-main__link--gray">
+                              <a
+                                href="#"
+                                aria-label="Перейти к блоку Что такое минеральная вата"
+                                title="Что такое минеральная вата"
+                                >Что такое минеральная вата</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="news-detail__banner news-detail__banner--sticky"
+                    >
+                      <p class="h6 bold-font">Другие статьи</p>
+
+                      <div class="list-main">
+                        <div class="list-main__item">
+                          <ul
+                            class="list-main__box list-main__box--border list-main__box--no-dots"
+                          >
+                            <li class="list-main__link">
+                              <time
+                                datetime="2023-11-27"
+                                title="27 ноября 2023 года"
+                                style="color: var(--secondary-color-500)"
+                                >2023.11.27</time
+                              >
+
+                              <p class="bold-font">
+                                Что такое минеральная вата
+                              </p>
+
+                              <a
+                                href="#"
+                                aria-lavel="Перейти на страницу новости"
+                                title="Читать далее"
+                                class="link-decor"
+                              >
+                                <span class="text-green medium-font"
+                                  >Читать далее</span
+                                >
+
+                                <span class="icon text-green">
+                                  <svg>
+                                    <use xlink:href="#arrow-right-icon"></use>
+                                  </svg>
+                                </span>
+                              </a>
+                            </li>
+
+                            <li class="list-main__link">
+                              <time
+                                datetime="2023-11-27"
+                                title="27 ноября 2023 года"
+                                style="color: var(--secondary-color-500)"
+                                >2023.11.27</time
+                              >
+
+                              <p class="bold-font">
+                                Низкая теплопроводность и другие свойства
+                                минеральной ваты
+                              </p>
+
+                              <a
+                                href="#"
+                                aria-lavel="Перейти на страницу новости"
+                                title="Читать далее"
+                                class="link-decor"
+                              >
+                                <span class="text-green medium-font"
+                                  >Читать далее</span
+                                >
+
+                                <span class="icon text-green">
+                                  <svg>
+                                    <use xlink:href="#arrow-right-icon"></use>
+                                  </svg>
+                                </span>
+                              </a>
+                            </li>
+
+                            <li class="list-main__link">
+                              <time
+                                datetime="2023-11-27"
+                                title="27 ноября 2023 года"
+                                style="color: var(--secondary-color-500)"
+                                >2023.11.27</time
+                              >
+
+                              <p class="bold-font">
+                                Что такое минеральная вата
+                              </p>
+
+                              <a
+                                href="#"
+                                aria-lavel="Перейти на страницу новости"
+                                title="Читать далее"
+                                class="link-decor"
+                              >
+                                <span class="text-green medium-font"
+                                  >Читать далее</span
+                                >
+
+                                <span class="icon text-green">
+                                  <svg>
+                                    <use xlink:href="#arrow-right-icon"></use>
+                                  </svg>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="news swiper-block">
+            <div class="container">
+              <div class="topBox">
+                <header class="topBox__header">
+                  <div class="topBox__header-top">
+                    <h2 class="h2 montserrat-font">Другие новости</h2>
+                  </div>
+
+                  <div class="arrows-swiper">
+                    <button
+                      class="button button--cub button--white arrows-swiper__arrow prev"
+                      style="rotate: -180deg"
+                    >
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="#arrow-without-icon"></use>
+                        </svg>
+                      </span>
+                    </button>
+
+                    <button
+                      class="button button--cub button--white arrows-swiper__arrow next"
+                    >
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="#arrow-without-icon"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="swiper-block__content">
+                  <div class="swiper-block__box">
+                    <div class="swiper swiper--news">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="news-item">
+                            <header class="news-item__top">
+                              <div class="news-item__header">
+                                <time
+                                  datetime="2023-11-27"
+                                  title="27 ноября 2023 года"
+                                  style="color: var(--secondary-color-500)"
+                                  >2023.11.27</time
+                                >
+
+                                <p class="h6 news-item__collapse">
+                                  Дарим скидку — 15% на все услуги компании
+                                  Дарим скидку — 15% на все услуги компании
+                                </p>
+                              </div>
+
+                              <div class="news-item__content">
+                                <p class="news-item__collapse">
+                                  Приближается декабрь, а вместе с ним и самый
+                                  долгожданный праздник — Новый год. Традиционно
+                                  в знак благодарности нашим клиентам мы дарим —
+                                  15% скидку на все услуги компании Масте
+                                </p>
+                              </div>
+                            </header>
+
+                            <footer class="news-item__footer">
+                              <a
+                                href="#"
+                                aria-lavel="Перейти на страницу новости"
+                                title="Читать далее"
+                                class="link-decor"
+                              >
+                                <span class="text-green medium-font"
+                                  >Читать далее</span
+                                >
+
+                                <span class="icon text-green">
+                                  <svg>
+                                    <use xlink:href="#arrow-right-icon"></use>
+                                  </svg>
+                                </span>
+                              </a>
+                            </footer>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="news-item">
+                            <header class="news-item__top">
+                              <div class="news-item__header">
+                                <time
+                                  datetime="2023-11-27"
+                                  title="27 ноября 2023 года"
+                                  style="color: var(--secondary-color-500)"
+                                  >2023.11.27</time
+                                >
+
+                                <p class="h6 news-item__collapse">
+                                  Дарим скидку — 15% на все услуги компании
+                                  Дарим скидку — 15% на все услуги компании
+                                </p>
+                              </div>
+
+                              <div class="news-item__content">
+                                <p class="news-item__collapse">
+                                  Приближается декабрь, а вместе с ним и самый
+                                  долгожданный праздник — Новый год. Традиционно
+                                  в знак благодарности нашим клиентам мы дарим —
+                                  15% скидку на все услуги компании Масте
+                                </p>
+                              </div>
+                            </header>
+
+                            <footer class="news-item__footer">
+                              <a
+                                href="#"
+                                aria-lavel="Перейти на страницу новости"
+                                title="Читать далее"
+                                class="link-decor"
+                              >
+                                <span class="text-green medium-font"
+                                  >Читать далее</span
+                                >
+
+                                <span class="icon text-green">
+                                  <svg>
+                                    <use xlink:href="#arrow-right-icon"></use>
+                                  </svg>
+                                </span>
+                              </a>
+                            </footer>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="news-item">
+                            <header class="news-item__top">
+                              <div class="news-item__header">
+                                <time
+                                  datetime="2023-11-27"
+                                  title="27 ноября 2023 года"
+                                  style="color: var(--secondary-color-500)"
+                                  >2023.11.27</time
+                                >
+
+                                <p class="h6 news-item__collapse">
+                                  Дарим скидку — 15% на все услуги компании
+                                  Дарим скидку — 15% на все услуги компании
+                                </p>
+                              </div>
+
+                              <div class="news-item__content">
+                                <p class="news-item__collapse">
+                                  Приближается декабрь, а вместе с ним и самый
+                                  долгожданный праздник — Новый год. Традиционно
+                                  в знак благодарности нашим клиентам мы дарим —
+                                  15% скидку на все услуги компании Масте
+                                </p>
+                              </div>
+                            </header>
+
+                            <footer class="news-item__footer">
+                              <a
+                                href="#"
+                                aria-lavel="Перейти на страницу новости"
+                                title="Читать далее"
+                                class="link-decor"
+                              >
+                                <span class="text-green medium-font"
+                                  >Читать далее</span
+                                >
+
+                                <span class="icon text-green">
+                                  <svg>
+                                    <use xlink:href="#arrow-right-icon"></use>
+                                  </svg>
+                                </span>
+                              </a>
+                            </footer>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="news-item">
+                            <header class="news-item__top">
+                              <div class="news-item__header">
+                                <time
+                                  datetime="2023-11-27"
+                                  title="27 ноября 2023 года"
+                                  style="color: var(--secondary-color-500)"
+                                  >2023.11.27</time
+                                >
+
+                                <p class="h6 news-item__collapse">
+                                  Дарим скидку — 15% на все услуги компании
+                                  Дарим скидку — 15% на все услуги компании
+                                </p>
+                              </div>
+
+                              <div class="news-item__content">
+                                <p class="news-item__collapse">
+                                  Приближается декабрь, а вместе с ним и самый
+                                  долгожданный праздник — Новый год. Традиционно
+                                  в знак благодарности нашим клиентам мы дарим —
+                                  15% скидку на все услуги компании Масте
+                                </p>
+                              </div>
+                            </header>
+
+                            <footer class="news-item__footer">
+                              <a
+                                href="#"
+                                aria-lavel="Перейти на страницу новости"
+                                title="Читать далее"
+                                class="link-decor"
+                              >
+                                <span class="text-green medium-font"
+                                  >Читать далее</span
+                                >
+
+                                <span class="icon text-green">
+                                  <svg>
+                                    <use xlink:href="#arrow-right-icon"></use>
+                                  </svg>
+                                </span>
+                              </a>
+                            </footer>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      @@include('../modules/footer.html')
+    </div>
+
+    <script src="/js/lib/swiper.min.js"></script>
+    <script type="module" src="/js/news-detail.js"></script>
+  </body>
+</html>

@@ -102,6 +102,11 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     gap: 24px;
+
+    &--column {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__header-top {

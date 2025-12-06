@@ -9,7 +9,6 @@ export const SWIPERS = {
         nextEl: ".top .arrows-swiper__arrow.next",
         prevEl: ".top .arrows-swiper__arrow.prev",
       },
-      
     },
   },
   NEWS: {
@@ -23,10 +22,10 @@ export const SWIPERS = {
         prevEl: ".news .arrows-swiper__arrow.prev",
       },
       mousewheel: {
-        enabled: true, 
+        enabled: true,
         forceToAxis: true,
-        sensitivity: 1, 
-        eventsTarget: 'container',
+        sensitivity: 1,
+        eventsTarget: "container",
       },
     },
   },
@@ -41,10 +40,10 @@ export const SWIPERS = {
         prevEl: ".reviews .arrows-swiper__arrow.prev",
       },
       mousewheel: {
-        enabled: true, 
+        enabled: true,
         forceToAxis: true,
-        sensitivity: 1, 
-        eventsTarget: 'container',
+        sensitivity: 1,
+        eventsTarget: "container",
       },
     },
   },
@@ -64,7 +63,7 @@ export const SWIPERS = {
     selector: ".good-section .swiper--img-little",
     breakpoint: 122300000000,
     options: {
-      slidesPerView:4,
+      slidesPerView: 4,
       spaceBetween: 13,
     },
   },
@@ -79,10 +78,32 @@ export const SWIPERS = {
         prevEl: ".goods .arrows-swiper__arrow.prev",
       },
       mousewheel: {
-        enabled: true, 
+        enabled: true,
         forceToAxis: true,
-        sensitivity: 1, 
-        eventsTarget: 'container',
+        sensitivity: 1,
+        eventsTarget: "container",
+      },
+    },
+  },
+  IMG_SWIPER_DETAIL: {
+    selector: ".news-detail .swiper--detail",
+    breakpoint: 122300000000,
+    options: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".news-detail .arrows-swiper__arrow.next",
+        prevEl: ".news-detail .arrows-swiper__arrow.prev",
+      },
+      pagination: {
+        el: ".news-detail .swiper-pagination",
+        type: "fraction",
+      },
+      mousewheel: {
+        enabled: true,
+        forceToAxis: true,
+        sensitivity: 1,
+        eventsTarget: "container",
       },
     },
   },

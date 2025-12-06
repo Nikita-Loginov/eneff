@@ -1,0 +1,90 @@
+.news-detail__inner {
+  display: grid;
+  grid-template-columns: auto 403px;
+  gap: 40px;
+}
+.news-detail__info {
+  width: 100%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  background-color: var(--secondary-color-900);
+  min-width: 0;
+  width: 100%;
+}
+.news-detail__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.news-detail__item-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.news-detail__item-img {
+  width: 100%;
+  height: 390px;
+}
+.news-detail__item-img--big {
+  height: 430px;
+}
+.news-detail__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-detail__banners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.news-detail__banner {
+  padding: 24px;
+  background-color: var(--secondary-color-900);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.news-detail__banner--sticky {
+  position: sticky;
+  top: calc(var(--header-height, 100px) + 20px);
+}
+.news-detail__swiper-box {
+  position: relative;
+  min-width: 0;
+  width: 100%;
+}
+
+body.scrollBottom .news-detail__banner--sticky {
+  top: 20px;
+}
