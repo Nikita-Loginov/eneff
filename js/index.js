@@ -9,6 +9,9 @@ const swipers = [
   {
     ...SWIPERS.NEWS,
   },
+  {
+    ...SWIPERS.REVIEWS,
+  },
 ];
 
 const handleGlobalClick = (e) => {

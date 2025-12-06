@@ -1,16 +1,4 @@
 .news {
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  
 
-  &__swiper-box {
-    width: 100%;
-    min-width: 0;
-
-    .swiper-slide {
-        height: auto;
-    }
-  }
 }

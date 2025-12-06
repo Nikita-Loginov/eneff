@@ -23,4 +23,16 @@ export const SWIPERS = {
       },
     },
   },
+  REVIEWS: {
+    selector: ".reviews .swiper--reviews",
+    breakpoint: 122300000000,
+    options: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".reviews .arrows-swiper__arrow.next",
+        prevEl: ".reviews .arrows-swiper__arrow.prev",
+      },
+    },
+  },
 };

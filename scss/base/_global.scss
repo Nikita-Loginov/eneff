@@ -39,6 +39,10 @@ body {
       margin-bottom: var(--gap-blocks);
     }
 
+    &:last-child {
+      padding-bottom: var(--gap-blocks);
+    }
+
     &.middle-padding-bottom {
       padding-bottom: calc(var(--gap-blocks) / 2);
     }
@@ -117,5 +121,22 @@ body {
   .icon {
     width: 10px;
     height: 10px;
+  }
+}
+
+.text-dots {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content:"";
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: currentColor;
+    border-radius: 50%;
   }
 }

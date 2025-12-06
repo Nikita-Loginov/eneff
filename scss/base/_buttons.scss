@@ -36,6 +36,11 @@
     color: var(--secondary-color-900);
   }
 
+  &--dark-second {
+    background-color: var(--secondary-color-50);
+    color: var(--secondary-color-900);
+  }
+
   &--noBg {
     background-color: transparent;
     color: var(--secondary-color-100);
@@ -45,6 +50,11 @@
   &--middle-btn {
     min-height: 47px;
     padding: 14px;
+  }
+
+  &--big-btn {
+    min-height: 80px;
+    padding: 24px;
   }
 
   &--small-btn {
@@ -58,6 +68,11 @@
     flex-shrink: 0;
     padding: 10px;
     min-height: 0;
+  }
+
+  &--big-middle {
+    width: 51px;
+    height: 51px;
   }
 
   &--big-cub {
@@ -81,10 +96,18 @@
     }
   }
 
+  &--s-cub {
+    width: 42px;
+    height: 42px;
+  }
+
   &--middle-cub {
     width: 47px;
     height: 47px;
-    
+  }
+
+  &--with-cub {
+    padding: 4px 16px 4px 4px;
   }
 
   &.disabled {

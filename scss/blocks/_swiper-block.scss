@@ -1,0 +1,16 @@
+.swiper-block {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__box {
+    width: 100%;
+    min-width: 0;
+
+    .swiper-slide {
+      height: auto;
+    }
+  }
+}
