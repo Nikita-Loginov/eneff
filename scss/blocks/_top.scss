@@ -14,7 +14,7 @@
 
   &__content {
     display: flex;
-    gap: 20px;
+    gap: calculate-clamp(16px, 20px, 1440px, 1023px);
     justify-content: space-between;
   }
 
@@ -51,7 +51,7 @@
   &__info-content {
     position: relative;
     z-index: 2;
-    padding: 24px;
+    padding: calculate-clamp(12px, 24px, 1023px, 480px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,6 +64,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+
+    .card-info {
+      padding: calculate-clamp(12px, 24px, 1023px, 480px);
+    }
   }
 
   &__details {
@@ -71,6 +75,64 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: calculate-clamp(16px, 20px, 1440px, 1023px);
+  }
+
+  @media (max-width: 1179px) {
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      max-width: 60%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__details {
+      max-width: 100%;
+
+      .card-info {
+        gap: 5px;
+      }
+    }
+
+    &__info-content {
+      min-height: 450px;
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    &__cards {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .card-info {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__header {
+      word-break: break-all;
+      overflow-wrap: break-word;
+      hyphens: auto;
+
+      h1 {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }

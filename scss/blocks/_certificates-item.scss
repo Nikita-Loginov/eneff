@@ -1,6 +1,6 @@
 .certificates-item {
   background-color: var(--secondary-color-900);
-  padding: 24px;
+  padding: calculate-clamp(16px, 24px, 1440px, 1023px);
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -27,5 +27,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+
+    @media (max-width: 360px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

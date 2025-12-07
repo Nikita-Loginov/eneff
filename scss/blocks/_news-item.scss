@@ -1,5 +1,5 @@
 .news-item {
-  padding: 24px;
+  padding: calculate-clamp(20px, 24px, 1023px, 480px) calculate-clamp(16px, 24px, 1023px, 480px);
   background-color: var(--secondary-color-900);
   display: flex;
   flex-direction: column;

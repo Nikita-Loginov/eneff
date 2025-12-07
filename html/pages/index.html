@@ -281,7 +281,7 @@
                     <picture>
                       <source
                         srcset="
-                          /img/advantages/two.png  1x,
+                          /img/advantages/two.png 1x,
                           /img/advantages/two.png 2x
                         "
                       />
@@ -314,7 +314,7 @@
                     <picture>
                       <source
                         srcset="
-                          /img/advantages/two.png  1x,
+                          /img/advantages/two.png 1x,
                           /img/advantages/two.png 2x
                         "
                       />
@@ -776,7 +776,7 @@
           </div>
         </section>
 
-        <section class="news swiper-block">
+        <section class="news swiper-block swiper-block--noHidden">
           <div class="container">
             <div class="topBox">
               <header class="topBox__header">
@@ -1154,7 +1154,7 @@
                           </div>
                         </div>
                       </div>
-                      
+
                       <div class="swiper-slide">
                         <div class="reviews-item">
                           <div class="reviews-item__img">
@@ -1186,8 +1186,10 @@
             <div class="topBox">
               <header class="topBox__header">
                 <div class="topBox__header-top">
-                  <p class="h6 text-green regular-font">/ Конакты и реквизиты</p>
-        
+                  <p class="h6 text-green regular-font">
+                    / Конакты и реквизиты
+                  </p>
+
                   <h2 class="h2 montserrat-font">Связаться с нами</h2>
                 </div>
               </header>
@@ -1195,13 +1197,9 @@
               <div class="contact__inner">
                 @@include('../modules/contact-form.html')
               </div>
-        
-             
             </div>
           </div>
         </section>
-
-        
       </main>
 
       @@include('../modules/footer.html')

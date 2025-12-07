@@ -14,7 +14,7 @@
   }
 
   &__info {
-    padding: 50px;
+    padding: 50px calculate-clamp(32px, 50px, 1440px, 1023px);
   }
 
   &__video-box {
@@ -29,7 +29,7 @@
     &[data-action="pause"] {
       .about {
         &__video-actions {
-            opacity: 0;
+          opacity: 0;
 
           .pause {
             display: flex;
@@ -55,6 +55,25 @@
 
     .pause {
       display: none;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .container {
+      padding: 0;
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__video-box {
+      height: calculate-clamp(250px, 512px, 1023px, 480px);
+    }
+
+    &__info {
+      padding: calculate-clamp(20px, 50px, 1023px, 480px) calculate-clamp(20px, 32px, 1023px, 480px);
     }
   }
 }

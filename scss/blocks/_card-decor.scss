@@ -1,10 +1,10 @@
 .card-decor {
-  padding: 24px;
+  padding: calculate-clamp(16px, 24px, 1023px, 480px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
-  min-height: 284px;
+  gap: calculate-clamp(16px, 20px, 1023px, 480px);
+  min-height: calculate-clamp(0px, 284px, 1023px, 480px);
 
   &__header,
   &__content {

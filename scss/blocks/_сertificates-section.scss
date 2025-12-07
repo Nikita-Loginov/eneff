@@ -2,6 +2,6 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: calculate-clamp(16px, 30px, 1440px, 1023px);
   }
 }

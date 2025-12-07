@@ -4,7 +4,10 @@ import { SWIPERS } from "./swiper/data.js";
 const swipers = [
   {
     ...SWIPERS.GOODS
-  }
+  },
+  {
+    ...SWIPERS.TABS,
+  },
 ];
 
 const initSwipersGood = () => {

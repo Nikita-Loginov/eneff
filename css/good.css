@@ -1,7 +1,10 @@
+.good-section {
+  overflow: hidden;
+}
 .good-section__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: clamp(18px, -11.4388489209px + 2.8776978417vw, 30px);
   min-width: 0;
   width: 100%;
 }
@@ -24,7 +27,7 @@
 }
 .good-section__swiper-big {
   width: 100%;
-  height: 480px;
+  height: clamp(250px, 46.6850828729px + 42.3572744015vw, 480px);
   position: relative;
 }
 .good-section__img {
@@ -39,7 +42,7 @@
      object-fit: cover;
 }
 .good-section__swiper-little {
-  height: 146px;
+  height: clamp(70px, 2.817679558px + 13.9963167587vw, 146px);
 }
 .good-section__swiper-little .swiper-slide {
   cursor: pointer;
@@ -84,7 +87,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 12px;
-  padding: 32px;
+  padding: clamp(20px, 9.3922651934px + 2.2099447514vw, 32px);
   background-color: var(--secondary-color-900);
   width: 100%;
 }
@@ -119,4 +122,44 @@
 }
 .good-section__link-key {
   opacity: 0.6;
+}
+@media (max-width: 1179px) {
+  .good-section__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 1023px) {
+  .good-section__content {
+    gap: clamp(10px, 2.9281767956px + 1.4732965009vw, 18px);
+  }
+}
+@media (max-width: 767px) {
+  .good-section__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    padding: 0;
+  }
+  .good-section__link-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1215686275);
+    padding-top: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }

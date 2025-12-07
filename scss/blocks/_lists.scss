@@ -119,7 +119,7 @@
 .list-default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: calculate-clamp(8px, 18px, 1023px, 480px);
 
   &--flex {
     display: flex;
@@ -139,6 +139,11 @@
 
   &__head {
     color: var(--secondary-color-600);
+  }
+
+  @media(max-width:767px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -160,5 +165,13 @@
 
   &__key {
     opacity: 0.6;
+  }
+
+  @media(max-width:767px) {
+    &__link {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
   }
 }

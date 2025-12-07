@@ -2,7 +2,7 @@
   &__inner {
     display: grid;
     grid-template-columns: auto 403px;
-    gap: 40px;
+    gap: calculate-clamp(30px, 40px, 1440px, 1023px);
   }
 
   &__info {
@@ -10,7 +10,7 @@
     padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: calculate-clamp(32px, 40px, 1440px, 1023px);
     background-color: var(--secondary-color-900);
     min-width: 0;
     width: 100%;
@@ -30,10 +30,10 @@
 
   &__item-img {
     width: 100%;
-    height: 390px;
+    height:  calculate-clamp(260px, 390px, 1023px, 480px);
 
     &--big {
-      height: 430px;
+      height: calculate-clamp(260px, 430px, 1023px, 480px);
     }
 
     img {
@@ -50,7 +50,7 @@
   }
 
   &__banner {
-    padding: 24px;
+    padding: calculate-clamp(16px, 24px, 1023px, 480px);
     background-color: var(--secondary-color-900);
     display: flex;
     flex-direction: column;
@@ -67,6 +67,40 @@
     position: relative;
     min-width: 0;
     width: 100%;
+  }
+
+  @media(max-width: 1279px) {
+    &__inner {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__banner--none {
+      display: none;
+    }
+
+    &__banner--sticky {
+      position: static;
+    }
+  }
+
+  @media(max-width:1023px) {
+    &__inner {
+      gap: calculate-clamp(24px, 30px, 1023px, 480px);
+    }
+
+    &__info {
+      padding: var(--container-inline-padding);
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    &__banners,
+    .topBox__header {
+      padding-inline: var(--container-inline-padding);
+    }
   }
 }
 

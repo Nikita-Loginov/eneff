@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
+  padding: 12px calculate-clamp(12px, 24px, 1440px, 1023px);
   gap: 20px;
   background-color: var(--secondary-color-900);
 
@@ -10,7 +10,7 @@
     display: flex;
     gap: 32px;
     align-items: center;
-    
+
     width: 100%;
   }
 
@@ -19,8 +19,8 @@
     width: 100%;
 
     .button {
-        width: fit-content;
-        margin-left: auto;
+      width: fit-content;
+      margin-left: auto;
     }
   }
 
@@ -39,5 +39,46 @@
       height: 100%;
       object-fit: contain;
     }
+  }
+
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+
+    &__block {
+      max-width: 100%;
+
+      .button {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    &__content {
+      flex-direction: row-reverse;
+      justify-content: start;
+      gap: 12px;
+
+      .h5 {
+        font-size: calculate-clamp(14px, 18px, 1023px, 480px);
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    gap: 10px;
+
+    &__content {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 10px;
+
+      .button {
+        width: 100%;
+      }
+    }
+
+ 
   }
 }

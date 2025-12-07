@@ -1,20 +1,42 @@
 .advantages {
   background-color: var(--secondary-color-900);
-  
 
   &__items {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 30px;
+    gap: calculate-clamp(16px, 30px, 1440px, 1023px);
 
     .advantages-card {
       grid-column: span 3;
 
-      &:nth-child(5n + 3),
-      &:nth-child(5n + 4),
-      &:nth-child(5n + 5) {
-        grid-column: span 2;
+      @media (min-width: 1024px) {
+        &:nth-child(5n + 3),
+        &:nth-child(5n + 4),
+        &:nth-child(5n + 5) {
+          grid-column: span 2;
+        }
       }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+
+      .advantages-card {
+        grid-column: span 1;
+
+        &:last-child {
+          grid-column: 1 / -1;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__items {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

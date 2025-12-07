@@ -4,8 +4,8 @@
   justify-content: center;
   gap: 12px;
   font-weight: var(--weight-font-md);
-  min-height: 51px;
-  padding: 16px;
+  min-height: calculate-clamp(44px, 51px, 1023px, 480px);
+  padding: calculate-clamp(10px, 16px, 1023px, 480px);
   background-color: var(--primary-color-100);
   color: var(--secondary-color-900);
   transition: all 0.5s;
@@ -64,8 +64,8 @@
   }
 
   &--big-btn {
-    min-height: 80px;
-    padding: 24px;
+    min-height: calculate-clamp(40px, 80px, 1023px, 480px);
+    padding: calculate-clamp(10px, 24px, 1023px, 480px) calculate-clamp(14px, 24px, 1023px, 480px);
   }
 
   &--small-btn {
@@ -97,12 +97,12 @@
   }
 
   &--big-cub {
-    width: 64px;
-    height: 64px;
+    width: calculate-clamp(56px, 64px, 1023px, 480px);
+    height: calculate-clamp(56px, 64px, 1023px, 480px);
 
     .icon {
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
     }
   }
 

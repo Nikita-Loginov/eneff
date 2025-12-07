@@ -106,6 +106,14 @@ h6,
   letter-spacing: calc((1em * 0.02) * -1);
 }
 
+.fz32-16 {
+  font-size: calculate-clamp(16px, 32px, 1023px, 480px);
+}
+
+.fz32-21 {
+  font-size: calculate-clamp(16px, 32px, 1023px, 480px);
+}
+
 .uppercase-text {
   text-transform: uppercase;
 }

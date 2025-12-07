@@ -1,3 +1,6 @@
+.catalogy {
+  overflow: hidden;
+}
 .catalogy__btns {
   width: 100%;
   min-width: 0;
@@ -10,5 +13,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 26px;
+  gap: clamp(16px, -8.5323741007px + 2.3980815348vw, 26px);
 }

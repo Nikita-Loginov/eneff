@@ -59,7 +59,13 @@ body {
   &:has(.top-page) {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: calculate-clamp(24px, 32px, 1440px, 1023px);
+  }
+
+  @media (max-width: 767px) {
+    &--top {
+      padding-top: calc(var(--header-height, 71px) + 32px);
+    }
   }
 }
 
@@ -91,10 +97,20 @@ body {
 .topBox {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: calculate-clamp(32px, 40px, 1440px, 1023px);
 
   &--small {
-    gap: 32px;
+    gap: calculate-clamp(24px, 32px, 1440px, 1023px);
+  }
+
+  &--specify {
+    gap: calculate-clamp(24px, 32px, 1440px, 1023px);
+
+    .topBox {
+      &__header-top {
+        gap: calculate-clamp(24px, 32px, 1440px, 1023px);
+      }
+    }
   }
 
   &__header {
@@ -112,7 +128,11 @@ body {
   &__header-top {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: calculate-clamp(8px, 24px, 1023px, 480px);
+  }
+
+  @media (max-width: 1023px) {
+    gap: calculate-clamp(24px, 32px, 1023px, 480px);
   }
 }
 
@@ -123,12 +143,13 @@ body {
 .text-decor {
   display: flex;
   flex-direction: column;
-  padding: 18px 24px;
+  padding: calculate-clamp(16px, 18px, 1023px, 480px)
+    calculate-clamp(16px, 24px, 1023px, 480px);
   background-color: var(--primary-color-100);
   color: var(--secondary-color-900);
 
   &--big {
-    padding: 40px;
+    padding: calculate-clamp(16px, 40px, 1023px, 480px);
   }
 }
 
@@ -171,7 +192,16 @@ body {
 .goods-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: calculate-clamp(16px, 30px, 1440px, 1023px);
+
+  @media (max-width: 1279px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .more-block {

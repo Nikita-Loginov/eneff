@@ -1,4 +1,6 @@
 .catalogy {
+  overflow: hidden;
+
   &__btns {
     width: 100%;
     min-width: 0;
@@ -7,6 +9,6 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: calculate-clamp(16px, 26px, 1440px, 1023px);
   }
 }

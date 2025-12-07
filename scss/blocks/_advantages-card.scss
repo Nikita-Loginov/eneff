@@ -1,5 +1,5 @@
 .advantages-card {
-  --padding-card: 32px;
+  --padding-card: #{calculate-clamp(20px, 32px, 1440px, 1023px)};
 
   padding: var(--padding-card);
   display: flex;
@@ -59,11 +59,37 @@
     right: 0;
     top: 10%;
     bottom: 10%;
-    width: calc(--img-width);
+    display: flex;
+    width: auto;
+    max-width: 100%;
 
     img {
       width: 100%;
       height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media(max-width: 1023px) {
+    
+    min-height: calculate-clamp(300px, 440px, 1023px, 480px);
+
+    &__img {
+      max-width: 70%;
+      top: auto;
+      bottom: var(--padding-card);
+    }
+  }
+
+  @media(max-width:767px) {
+    &:has(.advantages-card__img) {
+      .advantages-card {
+        &__header,
+        &__footer,
+        &__content {
+          max-width: 100%;
+        }
+      }
     }
   }
 }

@@ -38,5 +38,17 @@
         }
       }
     }
+
+    @media (max-width: 1023px) {
+      top: auto;
+      bottom: 20px;
+      transform: translate(0);
+
+      .arrows-swiper {
+        &__arrow {
+          bottom: 0;
+        }
+      }
+    }
   }
 }
