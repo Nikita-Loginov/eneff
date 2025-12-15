@@ -210,3 +210,19 @@ body {
   justify-content: center;
   gap: 10px;
 }
+
+.opacity-80-hover {
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.green-hover {
+  transition: all 0.5s;
+
+  &:hover {
+    color: var(--primary-color-200);
+  }
+}

@@ -1,3 +1,12 @@
+@mixin hover-white-btn {
+  background-color: var(--primary-color-100);
+  color: var(--secondary-color-900);
+
+  .icon {
+    color: var(--secondary-color-900);
+  }
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -25,6 +34,12 @@
   &--gray {
     background-color: var(--secondary-color-800);
     color: var(--secondary-color-100);
+
+    &:hover,
+    &:active {
+      background-color: var(--primary-color-100);
+      color: var(--secondary-color-900);
+    }
   }
 
   &--gray-accent {
@@ -35,6 +50,21 @@
   &--white {
     background-color: var(--secondary-color-900);
     color: var(--primary-color-100);
+
+    &:hover,
+    &:active {
+      @include hover-white-btn;
+    }
+  }
+
+  &--white-dark-color {
+    background-color: var(--secondary-color-900);
+    color: var(--secondary-color-10);
+
+    &:hover,
+    &:active {
+      @include hover-white-btn;
+    }
   }
 
   &--white-second {
@@ -56,6 +86,34 @@
     background-color: transparent;
     color: var(--secondary-color-100);
     border: 1px solid var(--secondary-color-1000);
+
+    &:hover,
+    &:active {
+      background-color: var(--primary-color-100);
+      color: var(--secondary-color-900);
+      border-color: var(--primary-color-100);
+    }
+  }
+
+  &--hover-green-color {
+    &:hover,
+    &:active {
+      color: var(--primary-color-200);
+    }
+  }
+
+  &--hover-blue-color {
+    &:hover,
+    &:active {
+      color: var(--blue-color-100);
+    }
+  }
+
+  &--hover-blue {
+    &:hover,
+    &:active {
+      background-color: var(--blue-color-100);
+    }
   }
 
   &--middle-btn {
@@ -65,7 +123,8 @@
 
   &--big-btn {
     min-height: calculate-clamp(40px, 80px, 1023px, 480px);
-    padding: calculate-clamp(10px, 24px, 1023px, 480px) calculate-clamp(14px, 24px, 1023px, 480px);
+    padding: calculate-clamp(10px, 24px, 1023px, 480px)
+      calculate-clamp(14px, 24px, 1023px, 480px);
   }
 
   &--small-btn {
@@ -129,6 +188,13 @@
 
   &--with-cub {
     padding: 4px 16px 4px 4px;
+
+    &:hover,
+    &:active {
+      .button--dark {
+        background-color: var(--primary-color-100);
+      }
+    }
   }
 
   &.disabled {

@@ -38,7 +38,11 @@
 
   &.isHover {
     &:hover {
-      background-color: var(--primary-color-100);
+      // background-color: var(--primary-color-100);
+
+      .button {
+        @include hover-white-btn;
+      }
     }
   }
 

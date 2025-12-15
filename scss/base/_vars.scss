@@ -3,6 +3,8 @@ html {
   --bg-color: #f1f1f2;
 
   --secondary-color-0: #000000;
+  --secondary-color-rgba: rgb(0, 0, 0);
+  --secondary-color-10: #00000080;
   --secondary-color-50: #333333;
   --secondary-color-100: #272727;
   --secondary-color-200: #131313;
@@ -23,6 +25,10 @@ html {
 
   --primary-color-100: #129247;
   --primary-color-200: #69da98;
+
+  --blue-color-100: #79a8f0;
+
+  --red-color-100: #ff0000;
 
   --font-main: "DIN Pro", sans-serif;
   --font-secondary: "Montserrat", sans-serif;

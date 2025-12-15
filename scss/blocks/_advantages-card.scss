@@ -11,6 +11,22 @@
 
   --img-width: 20%;
 
+  &.isHover {
+    &:hover {
+      .advantages-card {
+        &__title {
+          color: var(--primary-color-100);
+        }
+
+       &__footer {
+        .button {
+          @include hover-white-btn;
+        }
+       }
+      }
+    }
+  }
+
   &--big {
     min-height: 404px;
 
@@ -31,6 +47,10 @@
     gap: 20px;
     position: relative;
     z-index: 2;
+  }
+
+  &__title {
+    transition: all 0.5s;
   }
 
   &:has(.advantages-card__img) {
@@ -70,8 +90,7 @@
     }
   }
 
-  @media(max-width: 1023px) {
-    
+  @media (max-width: 1023px) {
     min-height: calculate-clamp(300px, 440px, 1023px, 480px);
 
     &__img {
@@ -81,7 +100,7 @@
     }
   }
 
-  @media(max-width:767px) {
+  @media (max-width: 767px) {
     &:has(.advantages-card__img) {
       .advantages-card {
         &__header,

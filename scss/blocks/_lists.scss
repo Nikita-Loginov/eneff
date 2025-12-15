@@ -23,7 +23,14 @@
       transition: all 0.5s;
     }
 
-    &:hover,
+    &:hover {
+      color: var(--primary-color-100);
+
+      .icon {
+        color: var(--primary-color-100);
+      }
+    }
+
     &.green {
       background-color: var(--primary-color-100);
       color: var(--secondary-color-900);
@@ -141,7 +148,7 @@
     color: var(--secondary-color-600);
   }
 
-  @media(max-width:767px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
   }
@@ -167,7 +174,7 @@
     opacity: 0.6;
   }
 
-  @media(max-width:767px) {
+  @media (max-width: 767px) {
     &__link {
       flex-direction: column;
       align-items: flex-start;

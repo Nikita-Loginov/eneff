@@ -14,8 +14,9 @@
 
           <div class="footer-top__info-btns">
             <button
-              class="button button--dark-second button--middle-btn button--with-cub"
+              class="button button--dark-second button--middle-btn button--with-cub modal-open"
               type="button"
+              data-modal="requestModal"
             >
               <div class="button button--cub button--dark button--s-cub">
                 <span class="icon">
@@ -45,7 +46,11 @@
               <span class="p1">Скачать прайс-лист</span>
             </a>
 
-            <button class="button button--middle-btn" type="button">
+            <button
+              class="button button--middle-btn modal-open"
+              type="button"
+              data-modal="requestModal"
+            >
               <span class="medium-font p1">Оставить заявку</span>
             </button>
           </div>
@@ -61,6 +66,7 @@
                   href="#"
                   aria-label="Перейти на страницу Товары"
                   title="Товары"
+                  class="opacity-80-hover"
                   >Товары</a
                 >
               </li>
@@ -70,6 +76,7 @@
                   href="#"
                   aria-label="Перейти на страницу Теxнические решения"
                   title="Теxнические решения"
+                  class="opacity-80-hover"
                   >Теxнические решения</a
                 >
               </li>
@@ -79,6 +86,7 @@
                   href="#"
                   aria-label="Перейти на страницу Заказчикам"
                   title="Заказчикам"
+                  class="opacity-80-hover"
                   >Заказчикам</a
                 >
               </li>
@@ -88,6 +96,7 @@
                   href="#"
                   aria-label="Перейти на страницу Проектировщикам"
                   title="Проектировщикам"
+                  class="opacity-80-hover"
                   >Проектировщикам</a
                 >
               </li>
@@ -97,6 +106,7 @@
                   href="#"
                   aria-label="Перейти на страницу Подрядчикам"
                   title="Подрядчикам"
+                  class="opacity-80-hover"
                   >Подрядчикам</a
                 >
               </li>
@@ -112,6 +122,7 @@
                   href="#"
                   aria-label="Перейти на страницу О компании"
                   title="О компании"
+                  class="opacity-80-hover"
                   >О компании</a
                 >
               </li>
@@ -121,6 +132,7 @@
                   href="#"
                   aria-label="Перейти на страницу Новости"
                   title="Новости"
+                  class="opacity-80-hover"
                   >Новости</a
                 >
               </li>
@@ -130,6 +142,7 @@
                   href="#"
                   aria-label="Перейти на страницу Контакты"
                   title="Контакты"
+                  class="opacity-80-hover"
                   >Контакты</a
                 >
               </li>
@@ -139,6 +152,7 @@
                   href="#"
                   aria-label="Перейти на страницу Реквизиты"
                   title="Реквизиты"
+                  class="opacity-80-hover"
                   >Реквизиты</a
                 >
               </li>
@@ -152,7 +166,7 @@
               href="tel:+73832145855"
               aria-label="Позвонить по номеру: +7 (383) 214-58-55"
               title="+7 (383) 214-58-55"
-              class="h6 bold-font footer-top__link"
+              class="h6 bold-font footer-top__link green-hover"
               >+7 (383) 214-58-55</a
             >
 
@@ -174,7 +188,7 @@
                   href="https://yandex.ru/maps/65/novosibirsk/house/krasny_prospekt_165/bEsYfwZgTEcGQFtvfXx3cnlmZA==/?ll=82.910521%2C55.063550&z=16"
                   aria-label="Перейти по адресу : Новосибирск ул. Красный проспект 165 офис 4"
                   title="Новосибирск ул. Красный проспект 165 офис 4"
-                  class="list-default__item p2 footer-top__link"
+                  class="list-default__item p2 footer-top__link green-hover"
                   >Новосибирск ул. Красный проспект 165 офис 4</a
                 >
               </div>
@@ -188,7 +202,7 @@
                   href="mailto:info@eniff.ru"
                   aria-label="Написать на почту info@eniff.ru"
                   title="info@eniff.ru"
-                  class="list-default__item p2 footer-top__link"
+                  class="list-default__item p2 footer-top__link green-hover"
                   >info@eniff.ru</a
                 >
               </div>
@@ -204,7 +218,7 @@
                       href="#"
                       aria-label="Перейти к нам в телеграмм"
                       title="Телеграм"
-                      class="button button--cub button--white button--small-cub"
+                      class="button button--cub button--white button--hover-blue button--small-cub"
                       ><span
                         class="icon"
                         style="color: var(--secondary-color-0)"
@@ -251,6 +265,7 @@
                 <a
                   aria-label="Перейти на страницу Политика конфиденциальности"
                   title="Политика конфиденциальности"
+                  href="#"
                   class="p2"
                   >Политика конфиденциальности</a
                 >
@@ -263,8 +278,13 @@
           <div class="footer-copy__dev">
             <p class="p2">Разработка сайта</p>
 
-            <a href="https://alab.su/" title="Alab studio" aria-label="Перейти на сайт рекламодателя" class="footer-copy__dev-logo">
-              <img src="/img/logos/alab.png" alt="логотип Alab studio">
+            <a
+              href="https://alab.su/"
+              title="Alab studio"
+              aria-label="Перейти на сайт рекламодателя"
+              class="footer-copy__dev-logo"
+            >
+              <img src="/img/logos/alab.png" alt="логотип Alab studio" />
             </a>
           </div>
         </div>
@@ -273,4 +293,8 @@
   </div>
 </footer>
 
+@@include('../modals/request.html')
+@@include('../modals/success.html')
+
+<script src="/js/lib/imask.min.js"></script>
 <script src="/js/page.js" type="module"></script>
