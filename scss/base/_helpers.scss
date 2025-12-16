@@ -23,3 +23,33 @@
   white-space: nowrap;
   border: 0;
 }
+
+@mixin green-line {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-color-100);
+    scale: 0;
+    transform-origin: right;
+    transition: scale 0.2s;
+  }
+
+  &:hover,
+  &.active {
+    &:after {
+      scale: 1;
+      transform-origin: left;
+    }
+  }
+
+  &.active {
+    color: var(--primary-color-100);
+  }
+}

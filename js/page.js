@@ -2,10 +2,14 @@ import { getHeightHeader, checkScrollY } from "./modules/header.js";
 import { searcBlockTab } from "./modules/tab.js";
 import { initModal, checkStartOpen } from "./modules/modal.js";
 import { initFormValidation } from "./modules/validate.js";
+import { toggleAccordeonItems } from "./modules/accordeon.js";
+import { initMenu } from "./modules/menu.js";
 
 const handleGlobalClick = (e) => {
-  searcBlockTab(e)
+  searcBlockTab(e);
   initModal(e);
+  toggleAccordeonItems(e);
+  initMenu(e);
 };
 
 const initValidate = () => {

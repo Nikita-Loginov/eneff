@@ -1,6 +1,12 @@
 .logo {
   max-width: 280px;
   height: 81px;
+  display: flex;
+
+  &--mini {
+    max-width: 141px;
+    height: 43px;
+  }
 
   img,
   svg {

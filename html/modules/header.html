@@ -1,11 +1,286 @@
-@@include('../sprites/globall.html')
-
-@@include('../sprites/social.html')
+@@include('../sprites/globall.html') @@include('../sprites/social.html')
 
 <header class="header header-scroll">
   <div class="container">
     <div class="header__inner">
-      тутс header
+      <div class="header__info">
+        <a
+          href="/"
+          aria-label="Перейти на главную"
+          title="Eneff"
+          class="logo logo--mini"
+        >
+          <img src="/img/logos/eneff-dark.png" alt="eneff logo" />
+        </a>
+
+        <div class="check-big">
+          <label class="check-big__item">
+            <input type="radio" name="lang" />
+
+            <span class="uppercase-text p2 medium-font">EN</span>
+          </label>
+
+          <label class="check-big__item">
+            <input type="radio" name="lang" checked />
+
+            <span class="uppercase-text p2 medium-font">RU</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="menu">
+        <button
+          class="menu__burger"
+          type="button"
+          aria-label="Открыть/закрыть меню"
+        >
+          <div class="menu__burger-box">
+            <span></span>
+          </div>
+        </button>
+        <div class="menu__content">
+          <ul class="menu__box accordeon" data-width="1279">
+            <li class="menu__link" >
+              <div class="menu__item accordeon__item list-popup">
+                <div class="list-popup__btn accordeon__question menu__item-box">
+                  <p class="p1 lh120">О компании</p>
+
+                  <div class="list-popup__arrow">
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="#arrow-bottom-simple-icon"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="list-popup__box accordeon__answer">
+                  <ul class="list-popup__list">
+                    <li class="list-popup__link" data-close-menu>
+                      <a
+                        href="/contact.html"
+                        class="list-popup__item menu__item-box"
+                        aria-label="Перейти на страницу Контакты"
+                        title="Контакты"
+                      >
+                        <span class="p1 lh120">Контакты</span>
+
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-without-icon"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="list-popup__link" data-close-menu>
+                      <a
+                        href="/reviews.html"
+                        aria-label="Перейти на страницу Отзывы"
+                        title="Отзывы"
+                        class="list-popup__item menu__item-box"
+                      >
+                        <span class="p1 lh120">Отзывы</span>
+
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-without-icon"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="list-popup__link" data-close-menu>
+                      <a
+                        href="/сertificates.html"
+                        aria-label="Перейти на страницу Сертификаты"
+                        title="Сертификаты"
+                        class="list-popup__item menu__item-box"
+                      >
+                        <span class="p1 lh120">Сертификаты</span>
+
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-without-icon"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="menu__link" data-close-menu>
+              <div class="menu__item">
+                <a
+                  href="/about.html"
+                  title="Товары"
+                  aria-label="Перейти на страницу Товары"
+                  class="menu__item-box green-line"
+                >
+                  <p class="p1 lh120">Товары</p>
+                </a>
+              </div>
+            </li>
+
+            <li class="menu__link" data-close-menu>
+              <div class="menu__item">
+                <a
+                  href="/about.html"
+                  title="Технические решения"
+                  aria-label="Перейти на страницу Технические решения"
+                  class="menu__item-box green-line"
+                >
+                  <p class="p1 lh120">Технические решения</p>
+                </a>
+              </div>
+            </li>
+
+            <li class="menu__link" data-close-menu>
+              <div class="menu__item">
+                <a
+                  href="/news.html"
+                  title="Новости"
+                  aria-label="Перейти на страницу Новости"
+                  class="menu__item-box green-line active"
+                >
+                  <p class="p1 lh120">Новости</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="menu__mobile">
+            <div class="menu__mobile-item">
+              <a
+                href="tel:+74951094070"
+                aria-label="Позвонить по номеру:+7 (495) 109-40-70"
+                title="+7 (495) 109-40-70"
+                class="link-icon"
+                data-close-menu
+              >
+                <span class="icon">
+                  <svg>
+                    <use xlink:href="#tel-icon"></use>
+                  </svg>
+                </span>
+
+                <span class="p1 lh130 medium-font">+7 (495) 109-40-70</span>
+              </a>
+
+              <div class="check-big" data-close-menu>
+                <label class="check-big__item">
+                  <input type="radio" name="lang-mobile" />
+
+                  <span class="uppercase-text p2 medium-font">EN</span>
+                </label>
+
+                <label class="check-big__item">
+                  <input type="radio" name="lang-mobile" checked />
+
+                  <span class="uppercase-text p2 medium-font">RU</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="header__details-info">
+              <ul class="social">
+                <li class="social__link" data-close-menu>
+                  <a
+                    href="#"
+                    aria-label="Перейти к нам в телеграмм"
+                    title="Телеграм"
+                    class="button button--cub button--dark button--middle-cub button--hover-blue-color"
+                    ><span class="icon">
+                      <svg>
+                        <use xlink:href="#telegram-icon"></use>
+                      </svg> </span
+                  ></a>
+                </li>
+
+                <li class="social__link" data-close-menu>
+                  <a
+                    href="#"
+                    aria-label="Перейти к нам в вацап"
+                    title="Вацап"
+                    class="button button--cub button--dark button--middle-cub button--hover-green-color"
+                    ><span class="icon">
+                      <svg>
+                        <use xlink:href="#whats-icon"></use>
+                      </svg> </span
+                  ></a>
+                </li>
+              </ul>
+
+              <button
+                class="button modal-open button--middle-btn"
+                type="button"
+                data-modal="requestModal"
+                data-close-menu
+                style="width: 100%;"
+              >
+                <span class="medium-font p1">Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__details">
+        <a
+          href="tel:+74951094070"
+          aria-label="Позвонить по номеру:+7 (495) 109-40-70"
+          title="+7 (495) 109-40-70"
+          class="link-icon"
+        >
+          <span class="icon">
+            <svg>
+              <use xlink:href="#tel-icon"></use>
+            </svg>
+          </span>
+
+          <span class="p1 lh130 medium-font">+7 (495) 109-40-70</span>
+        </a>
+
+        <div class="header__details-info">
+          <ul class="social">
+            <li class="social__link">
+              <a
+                href="#"
+                aria-label="Перейти к нам в телеграмм"
+                title="Телеграм"
+                class="button button--cub button--dark button--middle-cub button--hover-blue-color"
+                ><span class="icon">
+                  <svg>
+                    <use xlink:href="#telegram-icon"></use>
+                  </svg> </span
+              ></a>
+            </li>
+
+            <li class="social__link">
+              <a
+                href="#"
+                aria-label="Перейти к нам в вацап"
+                title="Вацап"
+                class="button button--cub button--dark button--middle-cub button--hover-green-color"
+                ><span class="icon">
+                  <svg>
+                    <use xlink:href="#whats-icon"></use>
+                  </svg> </span
+              ></a>
+            </li>
+          </ul>
+
+          <button
+            class="button modal-open button--middle-btn"
+            type="button"
+            data-modal="requestModal"
+          >
+            <span class="medium-font p1">Оставить заявку</span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </header>

@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
+  height: 100%;
 
   &.error {
     .input-box {
@@ -33,6 +34,7 @@
   }
 
   &__block {
+    height: 100%;
     input,
     textarea {
       background-color: transparent;
@@ -45,6 +47,7 @@
       font-size: var(--font-size-sm);
       line-height: var(--line-height-base);
       color: var(--secondary-color-900);
+      height: 100%;
 
       &:hover,
       &:focus,

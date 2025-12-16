@@ -1,0 +1,117 @@
+<section class="fos">
+  <div class="container">
+    <div class="fos__inner">
+      <form novalidate class="fos-form form">
+        <div class="fos-form__inner">
+          <div class="fos-form__content">
+            <header class="fos-form__header topBox">
+              <div class="topBox__header-top">
+                <p class="h6 regular-font">/ Обратная связь</p>
+
+                <h2 class="h2 montserrat-font">Есть вопрос?</h2>
+              </div>
+            </header>
+
+            <div class="fos-form__inputs">
+              <label class="input-box form__item">
+                <div class="input-box__head">
+                  <p class="p2 uppercase-text">ФИО</p>
+                </div>
+
+                <div class="input-box__block">
+                  <input
+                    type="text"
+                    placeholder="Иванов Иван Иванович"
+                    name="fio"
+                    required
+                    minlength="1"
+                    pattern="[А-Яа-яЁё\s\-]+"
+                    data-title="Пожалуйста, введите корректное ФИО (только русские буквы, пробелы и дефисы)"
+                    data-empty="Введите минимум 1 символ"
+                    aria-errormessage="fio-errors"
+                  />
+                </div>
+
+                <div
+                  class="input-box__errors form__errors"
+                  id="fio-errors"
+                ></div>
+              </label>
+
+              <label class="input-box form__item">
+                <div class="input-box__head">
+                  <p class="p2">Телефон</p>
+                </div>
+
+                <div class="input-box__block">
+                  <input
+                    type="tel"
+                    placeholder="+7 9__ ___ __ __"
+                    name="tel"
+                    required
+                    minlength="1"
+                    pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$"
+                    data-title="Введите телефон в формате: +7 (900) 000-00-00"
+                    data-empty="Ведите минимум один символ"
+                    aria-errormessage="tel-errors"
+                  />
+                </div>
+
+                <div
+                  class="input-box__errors form__errors"
+                  id="tel-errors"
+                ></div>
+              </label>
+
+              <label class="input-box form__item">
+                <div class="input-box__head">
+                  <p class="p2">Комания</p>
+                </div>
+
+                <div class="input-box__block">
+                  <input type="text" placeholder="Комания" name="company" />
+                </div>
+              </label>
+
+              <label class="input-box form__item input-box--big">
+                <div class="input-box__head">
+                  <p class="p2">Коментарий</p>
+                </div>
+
+                <div class="input-box__block">
+                  <textarea
+                    type="text"
+                    placeholder="Коментарий..."
+                    name="comment"
+                  ></textarea>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <footer class="fos-form__footer">
+            <p class="p2 lh120">
+              Нажимая на кнопку я принимаю условия обработки данных и политику
+              конфиденциальности
+            </p>
+
+            <button
+              class="button button--white hover-dark modal-open"
+              type="submit"
+              data-modal="successModal"
+            >
+              <p class="p1">Отправить заявку</p>
+            </button>
+          </footer>
+        </div>
+      </form>
+
+      <div class="fos__img">
+        <picture>
+          <source srcset="/img/top/one.webp 1x, /img/top/one2x.webp 2x" />
+          <img src="/img/top/one.webp" alt="фотография" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>

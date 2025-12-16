@@ -15,9 +15,31 @@ body {
   font-weight: var(--weight-font-main);
   font-family: var(--font-main);
   overflow-x: hidden;
+  position: relative;
 
   &.open-modal {
     overflow: hidden;
+  }
+
+  &:before {
+    content: "";
+    inset: 0;
+    background-color: rgba(var(--secondary-color-rgba), 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 40;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+  }
+
+  &.open-decor {
+    &:before {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 
@@ -224,5 +246,29 @@ body {
 
   &:hover {
     color: var(--primary-color-200);
+  }
+}
+
+.green-line {
+  @include green-line;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  .icon {
+    width: 15px;
+    height: 15px;
+    color: var(--primary-color-100);
+  }
+
+  * {
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    color: var(--primary-color-100);
   }
 }

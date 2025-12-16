@@ -1,57 +1,52 @@
-import { classAction } from "./classActions.js";
+const toggleMenu = (e) => {
+  const { target } = e;
 
-// ПРИМЕР ИСПОЛЬЗОВАНИЯ ФУНКЦИЙ В КОНЦЕ
+  if (!target.closest(".menu__burger")) return;
 
-// elClass - элемент на которой будет добавляться класс open при клике на burger-menu
-export function toggleMenu(elClass) {
-  const burgerMenu = document.querySelector(".burger-menu");
+  const menu = target.closest(".menu");
 
-  burgerMenu.addEventListener("click", () => {
-    classAction(elClass, "open", "toggle");
+  menu.classList.toggle("active");
+  document.body.classList.toggle("open-modal");
+  document.body.classList.toggle("open-decor");
+};
 
-    classAction(document.body, "open--menu", "toggle");
-  });
-}
+const closeMenuOnItemClick = (e) => {
+  const { target } = e;
 
-// функция для того, что закрывать меню при клике на какой-то элемент внутри меню, например: пункты меню.
-// elClass - это класс того элемента при клике на который будет скрываться меню,elClassRemove - элемент на котором будет удаляться активный класс для открытия меню
-export function closeMenuClickElInner(elClass, elClassRemove) {
-  const elements = document.querySelectorAll(elClass);
+  const menu = target.closest(".menu");
 
-  elements.forEach((item) => {
-    item.addEventListener("click", () => {
-      classAction(elClassRemove, "open", "remove");
+  if (
+    target.closest(".menu-item") ||
+    target.closest(".menu-link") ||
+    target.closest(".menu__close") ||
+    target.closest("[data-close-menu]")
+  ) {
+    closeMenu(menu);
+  }
+};
 
-      classAction(document.body, "open--menu", "remove");
-    });
-  });
-}
+const closeMenu = (menu) => {
+  if (!menu) return;
 
-export function closeMenuClickOutsideMenu(
-  classBtn,
-  elClassRemove,
-  menuBoxClass
-) {
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(menuBoxClass) && !e.target.closest(classBtn)) {
-      classAction(elClassRemove, "open", "remove");
+  menu.classList.remove("active");
+  document.body.classList.remove("open-modal");
+  document.body.classList.remove("open-decor");
+};
 
-      classAction(document.body, "open--menu", "remove");
+const closeMenuOnOutsideClick = (e) => {
+  const { target } = e;
+
+  const openMenus = document.querySelectorAll(".menu.active");
+
+  openMenus.forEach((menu) => {
+    if (!menu.contains(target) && !target.closest(".menu__burger")) {
+      closeMenu(menu);
     }
   });
-}
+};
 
-// ПРИМЕР ИСПОЛЬЗОВАНИЯ ФУНКЦИЙ
-/*import { toggleMenu, closeMenuClickElInner, closeMenuClickOutsideMenu } from "./modules/menu.js";
-
-function initMenu() {
-    const header = document.querySelector('.header');
-
-    toggleMenu(header);
-
-    closeMenuClickElInner('.menu__link', header);
-
-    closeMenuClickOutsideMenu('.burger-menu', header, '.menu__box');
-}
-
-initMenu()*/
+export const initMenu = (e) => {
+  toggleMenu(e);
+  closeMenuOnItemClick(e);
+  closeMenuOnOutsideClick(e);
+};

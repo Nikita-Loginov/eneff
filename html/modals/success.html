@@ -1,5 +1,5 @@
 <div class="modalBlock successModal">
-  <div class="modalBlock__inner">
+  <div class="modalBlock__inner successModal__inner">
     <header class="modalBlock__head">
       <button class="modal-close modalBlock__close">
         <span class="icon">
@@ -11,7 +11,28 @@
     </header>
 
     <div class="modalBlock__content">
-      <p class="h5">Ваша заявка отправлена</p>
+      <div class="successModal__content">
+        <div class="modalBlock__icon">
+          <span class="icon">
+            <svg>
+              <use xlink:href="#success-icon"></use>
+            </svg>
+          </span>
+        </div>
+        <p class="h5">Ваша заявка успешно отправлена</p>
+
+        <p class="p1 lh120">Мы свяжемся с вами в течение двух часов</p>
+      </div>
+
+      <footer class="modalBlock__footer">
+        <button
+          class="button button--white modal-close"
+          type="button"
+          aria-label="Закрыть модальное окно"
+        >
+          <p class="p1">Закрыть</p>
+        </button>
+      </footer>
     </div>
   </div>
 </div>

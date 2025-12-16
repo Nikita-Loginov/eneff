@@ -1,0 +1,50 @@
+.fos-form {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: calculate-clamp(20px, 32px, 1279px, 1023px);
+    background-color: var(--primary-color-100);
+    padding: calculate-clamp(20px, 40px, 1279px, 1023px);
+    color: var(--secondary-color-900);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 24px;
+  }
+
+  .input-box {
+    &--big {
+      grid-column: 2;
+      grid-row: 1 / -4;
+    }
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  @media(max-width:767px) {
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__footer {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 12px;
+      text-align: center;
+    }
+  }
+}

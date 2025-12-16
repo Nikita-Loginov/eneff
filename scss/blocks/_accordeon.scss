@@ -1,0 +1,11 @@
+.accordeon {
+  &__question {
+    cursor: pointer;
+  }
+
+  &__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+}

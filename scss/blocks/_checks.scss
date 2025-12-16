@@ -1,0 +1,32 @@
+.check-big {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  padding: 4px;
+  min-height: 40px;
+  background-color: var(--secondary-color-1100);
+  width: fit-content;
+
+  &__item {
+    cursor: pointer;
+
+    input {
+      @include visually-hidden;
+
+      &:checked + span {
+        background-color: var(--secondary-color-900);
+        color: var(--primary-color-100);
+      }
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 6px 10px;
+      background-color: transparent;
+      transition: all 0.5s;
+    }
+  }
+}
