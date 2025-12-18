@@ -1,0 +1,88 @@
+.check-card {
+  border: 3px solid transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &:has(.check-card__box input:checked) {
+    border-color: var(--primary-color-100);
+
+    .accommodation-card {
+      &__number {
+        background-color: var(--primary-color-100);
+
+        &:before {
+          color: var(--secondary-color-900);
+        }
+      }
+    }
+  }
+
+  &--bg {
+    background-color: var(--secondary-color-900);
+    border: none;
+    color: var(--secondary-color-100);
+
+    &:has(.check-card__box input:checked) {
+      background-color: var(--primary-color-100);
+      color: var(--secondary-color-900);
+    }
+  }
+
+  &--tab {
+    .check-card {
+      &__content {
+        min-height: 43px;
+        padding: 11px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &--blue-200 {
+    background-color: var(--blue-color-200);
+  }
+
+  &--blue-300 {
+    background-color: var(--blue-color-300);
+  }
+
+  &--blue-400 {
+    background-color: var(--blue-color-400);
+  }
+
+  &--green-300 {
+    background-color: var(--primary-color-300);
+  }
+
+  &--green-400 {
+    background-color: var(--primary-color-400);
+  }
+
+  &--yellow-100 {
+    background-color: var(--yellow-color-100);
+  }
+
+  &--orange-100 {
+    background-color: var(--orange-color-100);
+  }
+
+  &--orange-200 {
+    background-color: var(--orange-color-200);
+  }
+
+  &:hover {
+    border-color: var(--primary-color-150);
+  }
+
+  &__box {
+    input {
+      @include visually-hidden;
+    }
+  }
+
+  &__content {
+    cursor: pointer;
+  }
+}

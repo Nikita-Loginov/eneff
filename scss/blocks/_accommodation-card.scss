@@ -1,0 +1,66 @@
+.accommodation-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--secondary-color-900);
+  height: 100%;
+
+  & > *:not(:last-child) {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--secondary-color-1100);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--secondary-color-1100);
+    position: relative;
+    transition: all 0.5s;
+
+    &:before {
+      content: counter(list);
+      transition: all 0.5s;
+      color: var(--primary-color-100);
+      font-family: var(--font-secondary);
+      font-weight: var(--weight-font-2xl);
+      font-size: var(--font-size-base);
+      line-height: 1;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+  }
+
+  &__img {
+    width: 100%;
+    height: 137px;
+    margin-top: auto;
+
+    img,
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  @media(max-width:1279px) {
+    &__img {
+      height: 183px;
+    }
+  }
+}

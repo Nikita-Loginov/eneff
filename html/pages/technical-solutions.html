@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../modules/head.html', { "title" : "Технические решения", "links" :
+  ["./css/technical-solutions.css", "./css/lib/swiper.min.css"] })
+  <body>
+    <div class="wrapper">
+      @@include('../modules/header.html')
+
+      <main class="main main--top">
+        <div class="top-page">
+          <div class="container">
+            <div class="top-page__inner">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__link">
+                  <a
+                    href="/"
+                    aria-label="Перейти на Главную"
+                    title="Главная"
+                    class="montserrat-font p2"
+                    >Главная</a
+                  >
+                </li>
+
+                <li class="breadcrumbs__link">
+                  <span class="montserrat-font p2">Технические решения</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-sections">
+          <section class="technical-solutions">
+            <div class="container">
+              <div class="topBox">
+                <div class="topBox__header">
+                  <h1 class="h2">Технические решения</h1>
+                </div>
+
+                <div class="technical-solutions__inner">
+                  <div class="technical-solutions__item">
+                    <p class="h5 montserrat-font">Выберете размещение</p>
+
+                    <ul class="technical-solutions__items">
+                      <li class="check-card">
+                        <label class="check-card__content">
+                          <div class="check-card__box">
+                            <input type="radio" checked name="accommodation" />
+                          </div>
+
+                          <div class="accommodation-card">
+                            <header class="accommodation-card__header">
+                              <span class="accommodation-card__number"></span>
+
+                              <p class="p1 montserrat-font">В помещении</p>
+                            </header>
+
+                            <div class="accommodation-card__content">
+                              <div class="accommodation-card__img">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /img/accommodation-card/one.webp   1x,
+                                      /img/accommodation-card/one2x.webp 2x
+                                    "
+                                  />
+                                  <img
+                                    src="/img/accommodation-card/one.webp"
+                                    alt="фотография"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+
+                      <li class="check-card">
+                        <label class="check-card__content">
+                          <div class="check-card__box">
+                            <input type="radio" name="accommodation" />
+                          </div>
+
+                          <div class="accommodation-card">
+                            <header class="accommodation-card__header">
+                              <span class="accommodation-card__number"></span>
+
+                              <p class="p1 montserrat-font">Надземная</p>
+                            </header>
+
+                            <div class="accommodation-card__content">
+                              <div class="accommodation-card__img">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /img/accommodation-card/two.webp   1x,
+                                      /img/accommodation-card/two2x.webp 2x
+                                    "
+                                  />
+                                  <img
+                                    src="/img/accommodation-card/two.webp"
+                                    alt="фотография"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+
+                      <li class="check-card">
+                        <label class="check-card__content">
+                          <div class="check-card__box">
+                            <input type="radio" name="accommodation" />
+                          </div>
+
+                          <div class="accommodation-card">
+                            <header class="accommodation-card__header">
+                              <span class="accommodation-card__number"></span>
+
+                              <p class="p1 montserrat-font">
+                                Канальная (проходная/непроходная)
+                              </p>
+                            </header>
+
+                            <div class="accommodation-card__content">
+                              <div class="accommodation-card__img">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /img/accommodation-card/three.webp   1x,
+                                      /img/accommodation-card/three2x.webp 2x
+                                    "
+                                  />
+                                  <img
+                                    src="/img/accommodation-card/three.webp"
+                                    alt="фотография"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+
+                      <li class="check-card">
+                        <label class="check-card__content">
+                          <div class="check-card__box">
+                            <input type="radio" name="accommodation" />
+                          </div>
+
+                          <div class="accommodation-card">
+                            <header class="accommodation-card__header">
+                              <span class="accommodation-card__number"></span>
+
+                              <p class="p1 montserrat-font">Бесканальная</p>
+                            </header>
+
+                            <div class="accommodation-card__content">
+                              <div class="accommodation-card__img">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /img/accommodation-card/four.webp   1x,
+                                      /img/accommodation-card/four2x.webp 2x
+                                    "
+                                  />
+                                  <img
+                                    src="/img/accommodation-card/four.webp"
+                                    alt="фотография"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+
+                      <li class="check-card">
+                        <label class="check-card__content">
+                          <div class="check-card__box">
+                            <input type="radio" name="accommodation" />
+                          </div>
+
+                          <div class="accommodation-card">
+                            <header class="accommodation-card__header">
+                              <span class="accommodation-card__number"></span>
+
+                              <p class="p1 montserrat-font">В туннеле</p>
+                            </header>
+
+                            <div class="accommodation-card__content">
+                              <div class="accommodation-card__img">
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /img/accommodation-card/five.webp   1x,
+                                      /img/accommodation-card/five2x.webp 2x
+                                    "
+                                  />
+                                  <img
+                                    src="/img/accommodation-card/five.webp"
+                                    alt="фотография"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="technical-solutions__boxs">
+                    <div class="technical-solutions__item">
+                      <p class="h5 montserrat-font">Тип</p>
+
+                      <div class="technical-solutions__tabs">
+                        <div class="check-card check-card--tab check-card--bg">
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" checked name="type" />
+                            </div>
+
+                            <p class="p1 medium-font">Все</p>
+                          </label>
+                        </div>
+
+                        <div class="check-card check-card--tab check-card--bg">
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="type" />
+                            </div>
+
+                            <p class="p1 medium-font">Трубопроводы</p>
+                          </label>
+                        </div>
+
+                        <div class="check-card check-card--tab check-card--bg">
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="type" />
+                            </div>
+
+                            <p class="p1 medium-font">Тепловые сети</p>
+                          </label>
+                        </div>
+
+                        <div class="check-card check-card--tab check-card--bg">
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="type" />
+                            </div>
+
+                            <p class="p1 medium-font">Газоходы</p>
+                          </label>
+                        </div>
+
+                        <div class="check-card check-card--tab check-card--bg">
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="type" />
+                            </div>
+
+                            <p class="p1 medium-font">Емкости, аппараты</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="technical-solutions__item">
+                      <p class="h5 montserrat-font">
+                        Температурный диапазон изолируемого объекта
+                      </p>
+
+                      <div class="technical-solutions__tabs">
+                        <div
+                          class="check-card check-card--tab check-card--blue-200"
+                        >
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" checked name="temp" />
+                            </div>
+
+                            <p class="p1 medium-font">-200...-50</p>
+                          </label>
+                        </div>
+
+                        <div
+                          class="check-card check-card--tab check-card--blue-300"
+                        >
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="temp" />
+                            </div>
+
+                            <p class="p1 medium-font">-200...-50</p>
+                          </label>
+                        </div>
+
+                        <div
+                          class="check-card check-card--tab check-card--blue-400"
+                        >
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="temp" />
+                            </div>
+
+                            <p class="p1 medium-font">-200...-50</p>
+                          </label>
+                        </div>
+
+                        <div
+                          class="check-card check-card--tab check-card--green-300"
+                        >
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="temp" />
+                            </div>
+
+                            <p class="p1 medium-font">-200...-50</p>
+                          </label>
+                        </div>
+
+                        <div
+                          class="check-card check-card--tab check-card--green-400"
+                        >
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="temp" />
+                            </div>
+
+                            <p class="p1 medium-font">-200...-50</p>
+                          </label>
+                        </div>
+
+                        <div
+                          class="check-card check-card--tab check-card--yellow-100"
+                        >
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="temp" />
+                            </div>
+
+                            <p class="p1 medium-font">-200...-50</p>
+                          </label>
+                        </div>
+
+                        <div
+                          class="check-card check-card--tab check-card--orange-100"
+                        >
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="temp" />
+                            </div>
+
+                            <p class="p1 medium-font">-200...-50</p>
+                          </label>
+                        </div>
+
+                        <div
+                          class="check-card check-card--tab check-card--orange-200"
+                        >
+                          <label class="check-card__content">
+                            <div class="check-card__box">
+                              <input type="radio" name="temp" />
+                            </div>
+
+                            <p class="p1 medium-font">-200...-50</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="technical-solutions__item">
+                    <p class="h5 montserrat-font">Фильтры</p>
+
+                    <div class="technical-solutions__swiper-box">
+                      <div class="swiper swiper--tabs">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="dropdown dropdown--select">
+                              <button class="dropdown__toggle" type="button">
+                                <p class="dropdown__active p1"></p>
+
+                                <span class="icon arrow">
+                                  <svg>
+                                    <use
+                                      xlink:href="#arrow-bottom-simple-icon"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <div class="dropdown__content">
+                                <ul class="dropdown__list">
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item active dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 2</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 3</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 4</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 5</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 6</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 7</span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="dropdown dropdown--select">
+                              <button class="dropdown__toggle" type="button">
+                                <p class="dropdown__active p1"></p>
+
+                                <span class="icon arrow">
+                                  <svg>
+                                    <use
+                                      xlink:href="#arrow-bottom-simple-icon"
+                                    ></use>
+                                  </svg>
+                                </span>
+                              </button>
+
+                              <div class="dropdown__content">
+                                <ul class="dropdown__list">
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item active dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 2</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 3</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 4</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 5</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 6</span>
+                                    </div>
+                                  </li>
+
+                                  <li class="dropdown__link">
+                                    <div
+                                      class="dropdown__item dropdown-item-close"
+                                    >
+                                      <span class="p1">Материал 7</span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="technical-solutions__item">
+                    <p class="h5 montserrat-font">Результаты</p>
+
+                    <div class="technical-solutions__table-wrapper">
+                      <table class="technical-solutions__table">
+                        <thead class="technical-solutions__table-head">
+                          <tr>
+                            <td>
+                              <p class="p1 semibold-font">Тип</p>
+                            </td>
+
+                            <td>
+                              <p class="p1 semibold-font">Тип</p>
+                            </td>
+
+                            <td>
+                              <p class="p1 semibold-font">Тип</p>
+                            </td>
+                          </tr>
+                        </thead>
+
+                        <tbody class="technical-solutions__table-body">
+                          <tr>
+                            <td>
+                              <p class="p1 medium-font">
+                                ТРУБОПРОВОДЫ (горизонтальные/вертикальные)
+                              </p>
+                            </td>
+
+                            <td>
+                              <p class="p1 medium-font">
+                                низкотемпературный фольгированный аэрогель + ВТ
+                              </p>
+                            </td>
+
+                            <td>
+                              <p class="p1 medium-font">отводы</p>
+
+                              <p class="p1 medium-font">переходы</p>
+
+                              <p class="p1 medium-font">тройники</p>
+
+                              <p class="p1 medium-font">термочехлы</p>
+
+                              <p class="p1 medium-font">подвесы (ВТ-О)</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p1 medium-font">
+                                ТРУБОПРОВОДЫ (горизонтальные/вертикальные)
+                              </p>
+                            </td>
+
+                            <td>
+                              <p class="p1 medium-font">
+                                низкотемпературный фольгированный аэрогель + ВТ
+                              </p>
+                            </td>
+
+                            <td>
+                              <p class="p1 medium-font">отводы</p>
+
+                              <p class="p1 medium-font">переходы</p>
+
+                              <p class="p1 medium-font">тройники</p>
+
+                              <p class="p1 medium-font">термочехлы</p>
+
+                              <p class="p1 medium-font">подвесы (ВТ-О)</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p1 medium-font">
+                                ТРУБОПРОВОДЫ (горизонтальные/вертикальные)
+                              </p>
+                            </td>
+
+                            <td>
+                              <p class="p1 medium-font">
+                                низкотемпературный фольгированный аэрогель + ВТ
+                              </p>
+                            </td>
+
+                            <td>
+                              <p class="p1 medium-font">отводы</p>
+
+                              <p class="p1 medium-font">переходы</p>
+
+                              <p class="p1 medium-font">тройники</p>
+
+                              <p class="p1 medium-font">термочехлы</p>
+
+                              <p class="p1 medium-font">подвесы (ВТ-О)</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          @@include('../modules/fos.html')
+        </div>
+      </main>
+
+      @@include('../modules/footer.html')
+    </div>
+
+    <script src="/js/lib/swiper.min.js"></script>
+    <script type="module" src="/js/technical-solutions.js"></script>
+  </body>
+</html>
