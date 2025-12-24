@@ -5,6 +5,7 @@ import { initModal, checkStartOpen } from "./modules/modal.js";
 import { initFormValidation } from "./modules/validate.js";
 import { toggleAccordeonItems } from "./modules/accordeon.js";
 import { initMenu } from "./modules/menu.js";
+import { checkStorage, initStorage } from "./modules/localStorage.js";
 
 const handleGlobalClick = (e) => {
   toggleDropdown(e);
@@ -12,6 +13,7 @@ const handleGlobalClick = (e) => {
   initModal(e);
   toggleAccordeonItems(e);
   initMenu(e);
+  initStorage(e);
 };
 
 const initValidate = () => {
@@ -22,6 +24,7 @@ const initValidate = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  checkStorage();
   checkStartOpen();
   getHeightHeader();
   initValidate();

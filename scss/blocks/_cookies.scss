@@ -1,0 +1,30 @@
+.cookies {
+  position: fixed;
+  z-index: 100;
+  left: 40px;
+  bottom: 40px;
+  background-color: var(--secondary-color-0);
+  color: var(--secondary-color-900);
+  padding: 24px;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  display: none;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &.active {
+    display: flex;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+}

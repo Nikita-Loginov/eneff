@@ -3116,6 +3116,46 @@ body.open-decor:before {
   color: var(--primary-color-100);
 }
 
+.cookies {
+  position: fixed;
+  z-index: 100;
+  left: 40px;
+  bottom: 40px;
+  background-color: var(--secondary-color-0);
+  color: var(--secondary-color-900);
+  padding: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  display: none;
+}
+.cookies__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.cookies.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .cookies {
+    max-width: 100%;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
 .footer {
   padding: 60px 0 32px;
   background-color: var(--secondary-color-0);
